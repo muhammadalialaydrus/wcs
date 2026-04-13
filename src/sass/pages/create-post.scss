@@ -1,0 +1,12 @@
+.create-post {
+	@include breakpoint(tablet) {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+
+	.custom-form {
+		+ .button-area {
+			margin-top: 48px;
+		}
+	}
+}

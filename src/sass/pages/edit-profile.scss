@@ -1,0 +1,128 @@
+.edit-profile {
+	.custom-form {
+		+ .button-area {
+			margin-top: 48px;
+		}
+
+		.side-left {
+			+ .side-right {
+				margin-top: 48px;
+				
+				@include breakpoint(tablet) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	.image-area {
+		figure {
+			max-width: 40%;
+			margin: 0 auto;
+
+			@include breakpoint(tablet) {
+				max-width: 100%;
+			}
+
+			@include breakpoint(desktop) {
+				max-width: 80%;
+			}
+		}
+
+		.images {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding: 0 0 100%;
+			background-color: $blue;
+
+			img {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.text-logo {
+				font-size: 5em;
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				bottom: initial;
+				left: 0;
+				right: 0;
+				color: $white;
+				transform: translate(0, -50%);
+
+				@include breakpoint(tablet) {
+					font-size: 7em;
+				}
+			}
+		}
+
+		+ .upload-area {
+			margin-top: 16px;
+		}
+	}
+
+	.upload-area {
+		.upload-wrapper {
+			+ p {
+				margin-top: 16px;
+			}
+		}
+		
+		p {
+			text-align: center;
+		}
+	}
+
+	.edit-form {
+		.sub-input {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			gap: 8px;
+
+			.icon {
+				font-size: 1.3em;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+
+				.fa-x,
+				.fa-tiktok {
+					display: block;
+					width: 18px;
+					height: 30px;
+					margin: 0 auto;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					
+					@include breakpoint(tablet) {
+						width: 20px;
+						height: 30px;
+					}
+				}
+
+				.fa-x {
+					background-image: url('../assets/img/icon-x_twitter1.png');
+				}
+
+				.fa-tiktok {
+					background-image: url('../assets/img/icon-tiktok-navy.png');
+				}
+			}
+
+			.label-form {
+				margin: 0;
+			}
+		}
+	}
+}    

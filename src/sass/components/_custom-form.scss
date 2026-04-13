@@ -1,0 +1,257 @@
+.form {
+	.jcf-select {
+		border-radius: 10px;
+	}
+	
+	.form-control {
+		color: $body-color;
+		font-size: 12px;
+		line-height: 150%;
+		padding: 11px 12px;
+		height: auto;
+		border: 0;
+		background-color: $light-blue;
+		outline: 0;
+		border-radius: 8px;
+
+		@include breakpoint(tablet) {
+			font-size: 14px;
+			line-height: 143%;
+			padding: 10px 16px;
+		}
+
+		&.price-currency {
+			text-align: left!important;
+
+			&::placeholder {
+				color: $text-semi-blue;
+			}
+		}
+
+		&:disabled {
+			font-style: italic;
+			color: $text-semi-blue;
+			background-color: #dee6ef;
+		}
+
+		// &:focus {
+		// 	box-shadow: none;	
+		// }
+
+		&::placeholder {
+			font-style: italic;
+			color: $text-semi-blue;
+		}
+	}
+
+	.form-check {
+		padding: 5px 0;
+	}
+
+	.jcf-select,
+	.form-control {
+		background-color: $light-blue;
+	}
+
+	.jcf-radio,
+	.jcf-checkbox {
+		border: 0;
+		background-color: $light-blue;
+
+		&.jcf-checked {
+			background-color: $blue;
+		}
+	}
+
+	.jcf-radio {
+		span {
+			background-color: $white;
+			top: 4px;
+			bottom: 4px;
+			left: 4px;
+			right: 4px;
+		}
+	}
+
+	.jcf-checkbox {
+		span {
+			border-color: $white;
+		}
+	}
+
+	.invalid-feedback {
+		color: $red;
+	}
+
+	.upload-area {
+		.upload-wrapper {
+			+ p {
+				margin-top: 8px;
+			}
+		}
+
+		p {
+			font-size: 0.8em;
+			text-align: right;
+			font-style: italic;
+			color: #7ca1d2;
+		}
+	}
+
+	fieldset {
+		    padding: 10px 20px 30px;
+			border-radius: 8px;
+			
+			@include breakpoint(wide) {
+		    	padding: 20px 30px 40px;
+			}
+
+		& > legend {
+			font-size: 0.9em;
+			text-transform: uppercase;
+			line-height: 100%;
+			width: auto;
+			padding: 8px 16px 10px;
+			margin: 0;
+			
+			@include breakpoint(tablet) {
+				font-size: 1em;
+			}
+			
+			@include breakpoint(wide) {
+				font-size: 1.1em;
+			}
+		}
+
+		+ fieldset,
+		+ .button-area {
+			margin-top: 30px;
+		}
+	}
+
+	textarea {
+		&.form-control {
+			height: 160px;
+			resize: none;
+			border-radius: 8px;
+		}
+	}
+
+	::-webkit-input-placeholder {
+		color: $text-semi-blue;
+	}
+
+	:-moz-placeholder {
+		color: $text-semi-blue;
+	}
+
+	::-moz-placeholder {
+		color: $text-semi-blue;
+	}
+
+	:-ms-input-placeholder {  
+		color: $text-semi-blue;
+	}
+
+	.form-group {
+		position: relative;
+		margin: 0;
+
+		label {
+			font-size: 0.8em;
+			line-height: 120%;
+			letter-spacing: 0.5pt;
+			
+			// @include breakpoint(tablet) {
+			// 	font-size: 0.9em;
+			// }
+
+			&.label-form {
+				text-transform: uppercase;
+				color: $dark;
+			}
+		}
+
+		.form-check-label {
+			font-size: 12px;
+			vertical-align: middle;
+			letter-spacing: 0;
+			
+			@include breakpoint(tablet) {
+				font-size: 14px;
+			}
+		}
+
+		&[class*="col-"] {
+			padding: 6px 5px;
+		}
+
+		&.has-error {
+			.icon-date {
+				top: 13px;
+				transform: none;
+			}
+		}
+	}
+
+	.wrapper-input {
+		position: relative;
+
+		.form-control {
+			padding-right: 34px;
+			
+			@include breakpoint(tablet) {
+				padding-right: 38px;
+			}
+		}
+
+		.icon-date {
+			pointer-events: none;
+			position: absolute;
+			top: 50%;
+			bottom: initial;
+			left: initial;
+			right: 12px;
+			transform: translate(0, -50%);
+			
+			@include breakpoint(tablet) {
+				right: 16px;
+			}
+		}
+
+		.icon-password {
+			text-align: center;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			bottom: initial;
+			left: initial;
+			right: 6px;
+			transform: translate(0, -50%);
+			transition: $transition-base;
+			
+			@include breakpoint(tablet) {
+				right: 10px;
+			}
+
+			&.click {
+				&:before {
+					content: "\f070";
+				}
+			}
+
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+
+	.form-row {
+		+ .button-area {
+			margin-top: 20px;
+		}
+	}
+}

@@ -1,0 +1,334 @@
+footer {
+	position: relative;
+	z-index: 0;
+	background-color: $footer-background;
+
+	.nav-top {
+		position: relative;
+		padding: 50px 0;
+		overflow: hidden;
+
+		.footer-wrapper {
+			position: relative;
+			z-index: 1;
+
+			[class*="col-"] {
+				+ [class*="col-"] {
+					margin-top: 24px;
+
+					@include breakpoint(wide) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+
+		.footer-logo {
+			display: flex;
+			justify-content: center;
+			
+			@include breakpoint(wide) {
+				justify-content: start;
+			}
+
+			figure {
+				width: 180px;
+			}
+
+			+ .footer-info {
+				margin-top: 10px;
+			}
+		}
+
+		.footer-info {
+			text-align: center;
+			
+			@include breakpoint(wide) {
+				text-align: left;
+			}
+			
+			h6 {
+				font-size: 1rem;
+			}
+
+			+ .footer-contact {
+				margin-top: 30px;
+			}
+		}
+		
+		.footer-contact {
+			ul {
+				padding: 0;
+				list-style: none;
+
+				li {
+					+ li {
+						margin-top: 8px;
+					}
+				}
+			}
+
+			.nav-contact {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				gap: 8px;
+
+				&.align-items-center {
+					align-items: center;
+				}
+			}
+
+			.icon-area {
+				i {
+					font-size: 1rem;
+					line-height: 30px;
+					text-align: center;
+					width: 30px;
+					height: 30px;
+					color: $white;
+					background-color: #2E2549;
+					border-radius: 100%;
+				}
+			}
+
+			.info-area {
+				text-align: left;
+
+				h5 {
+					font-size: 0.85rem;
+					color: $white;
+
+					a {
+						color: $white;
+
+						&:hover {
+							color: $link-color;
+						}
+					}
+				}
+
+				h6 {
+					font-size: 0.85rem;
+					color: $body-color;
+				}
+
+				ul {
+					li {
+						+ li {
+							margin-top: 12px;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-nav {
+			[class*="col-"] {
+				+ [class*="col-"] {
+					margin-top: 0;
+				}
+			}
+
+			.nav-group {
+				h6 {
+					text-transform: uppercase;
+
+					+ .row {
+						margin-top: 8px;
+					}
+				}
+
+				+ .nav-group {
+					margin-top: 30px;
+				}
+			}
+
+			a {
+				font-size: 0.9em;
+				color: $white;
+				padding: 4px 0;
+				display: flex;
+				flex-wrap: wrap;
+
+				&:hover {
+					color: $link-color;
+				}
+			}
+		}
+
+		.footer-sosmed {
+			ul {
+				padding: 0;
+				text-align: center;
+				
+				@include breakpoint(wide) {
+					text-align: left;
+				}
+
+				+ p {
+					margin-top: 16px;
+					
+					@include breakpoint(wide) {
+						margin-top: 24px;
+					}
+				}
+			}
+
+			li {
+				margin: 0;
+				vertical-align: middle;
+
+				+ li {
+					margin: 0 0 0 4px;
+				}
+
+				&.linkedin {
+					a {
+						&:hover {
+							background-color: $linkedin;
+						}
+					}
+				}
+
+				&.facebook {
+					a {
+						&:hover {
+							background-color: $facebook;
+						}
+					}
+				}
+
+				&.twitter {
+					a {
+						&:hover {
+							background-color: $twitter;
+						}
+					}
+				}
+
+				&.tiktok {
+					a {
+						&:hover {
+							background-color: $black;
+						}
+					}
+				}
+
+				&.youtube {
+					a {
+						&:hover {
+							background-color: $youtube;
+						}
+					}
+				}
+
+				&.instagram {
+					a {
+						&:hover {
+							background: rgb(115,36,193);
+							background: -moz-linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+							background: -webkit-linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+							background: linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+							filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7324c1",endColorstr="#de943e",GradientType=1);
+						}
+					}
+				}
+			}
+
+			a {
+				font-size: 1.3em;
+				line-height: 100%;
+				text-align: center;
+				color: $white;
+				display: block;
+				background-color: #2E2549;
+				width: 36px;
+				height: 36px;
+				padding: 9px 0;
+				border-radius: 100%;
+				transition: all 0.3s linear;
+				
+				@include breakpoint(tablet) {
+					font-size: 1.4em;
+					width: 40px;
+					height: 40px;
+					padding: 10px 0;
+				}
+
+				&:hover {
+					color: $white;
+					background-color: $pink;
+				}
+			}
+
+			.icon-buttom {
+				display: block;
+				width: 18px;
+				height: 18px;
+				margin: 0 auto;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				
+				@include breakpoint(tablet) {
+					width: 20px;
+					height: 20px;
+				}
+
+				&.fa-tiktok {
+					background-image: url('../assets/img/icon-tiktok-white.png');
+				}
+			}
+
+			p {
+				font-size: 0.9em;
+				text-align: center;
+			
+				@include breakpoint(wide) {
+					text-align: left;
+				}
+			}
+		}
+
+		.bg-foot {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			z-index: 0;
+			top: -10%;
+			bottom: initial;
+			left: initial;
+			right: -13%;
+			background-image: url('../assets/img/bg-footer.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			@include breakpoint(tablet) {
+				top: -6%;
+				right: -4%;
+			}
+			
+			@include breakpoint(wide) {
+				top: -15%;
+			}
+		}
+	}
+
+	.nav-bottom {
+		text-align: center;
+		padding: 12px 0;
+		background-color: $black;
+
+		p {
+			font-size: 0.75em;
+			color: #c2d4ed;
+
+			strong {
+				font-weight: normal;
+				color: $white;
+			}
+		}
+	}
+}

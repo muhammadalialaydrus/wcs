@@ -1,0 +1,301 @@
+.profile-card {
+	position: relative;
+	text-align: center;
+	background-color: $light-blue;
+	border-radius: 16px;
+
+	@include breakpoint(tablet) {
+		text-align: left;
+	}
+
+	.wrapper {
+		padding: 24px;
+		
+		@include breakpoint(tablet) {
+			padding: 32px;
+		}
+	}
+
+	.side-left {
+		+ .side-right {
+			margin-top: 16px;
+			
+			@include breakpoint(tablet) {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.image-name {
+		.image-area {
+			figure {
+				max-width: 40%;
+				margin: 0 auto;
+
+				@include breakpoint(tablet) {
+					max-width: 100%;
+				}
+
+				@include breakpoint(desktop) {
+					max-width: 80%;
+				}
+			}
+
+			.images {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding: 0 0 100%;
+				background-color: $blue;
+
+				img {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				.text-logo {
+					font-size: 5em;
+					text-align: center;
+					position: absolute;
+					top: 50%;
+					bottom: initial;
+					left: 0;
+					right: 0;
+					color: $white;
+					transform: translate(0, -50%);
+
+					@include breakpoint(tablet) {
+						font-size: 7em;
+					}
+				}
+			}
+
+			+ .name-area {
+				margin-top: 16px;
+			}
+		}
+
+		.name-area {
+			text-align: center;
+
+			h3 {
+				color: $dark;
+			}
+		}
+	}
+
+	.info-bio {
+		.info {
+			padding: 8px 0;
+
+			h6 {
+				font-size: 0.85em;
+				letter-spacing: 0.5pt;
+				text-transform: uppercase;
+				color: #7ca1d2;
+				margin-bottom: 8px;
+			}
+
+			h5 {
+				font-size: 1em;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 4px;
+				justify-content: center;
+				
+				@include breakpoint(tablet) {
+					font-size: 1.1em;
+					justify-content: initial;
+				}
+
+				.ft-italic {
+					font-style: italic;
+				}
+			}
+
+			h4 {
+				font-size: 1.4em;
+				
+				@include breakpoint(tablet) {
+					font-size: 1.5em;
+				}
+			}
+		}
+
+		.icon-verified {
+			display: block;
+			width: 18px;
+			height: 18px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url('../assets/img/icon-verified.png');
+			
+			@include breakpoint(tablet) {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		.social-media {
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 8px;
+			justify-content: center;
+				
+			@include breakpoint(tablet) {
+				justify-content: initial;
+			}
+
+			li {
+				margin: 0;
+			}
+
+			a {
+				font-size: 1.3em;
+				line-height: 100%;
+				text-align: center;
+				color: $dark;
+				display: block;
+				background-color: $light-blue;
+				background-color: $white;
+				width: 36px;
+				height: 36px;
+				padding: 9px 0;
+				border-radius: 100%;
+				transition: all 0.3s linear;
+				
+				@include breakpoint(tablet) {
+					font-size: 1.4em;
+					width: 40px;
+					height: 40px;
+					padding: 10px 0;
+				}
+
+				&:hover {
+					color: $white;
+					background-color: $blue;
+				}
+
+				&.linkedin {
+					&:hover {
+						background-color: $linkedin;
+					}
+				}
+
+				&.facebook {
+					&:hover {
+						background-color: $facebook;
+					}
+				}
+
+				&.twitter {
+					&:hover {
+						background-color: $black;
+
+						.fa-x {
+							background-image: url('../assets/img/icon-x_twitter1-white.png');
+						}
+					}
+				}
+
+				&.whatsapp {
+					&:hover {
+						background-color: $whatsapp;
+					}
+				}
+
+				&.tiktok {
+					&:hover {
+						background-color: $black;
+
+						.fa-tiktok {
+							background-image: url('../assets/img/icon-tiktok-white.png');
+						}
+					}
+				}
+
+				&.youtube {
+					&:hover {
+						background-color: $youtube;
+					}
+				}
+
+				&.instagram {
+					&:hover {
+						background: rgb(115,36,193);
+						background: -moz-linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+						background: -webkit-linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+						background: linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7324c1",endColorstr="#de943e",GradientType=1);
+					}
+				}
+
+				&.link {
+					&:hover {
+						background-color: $blue;
+					}
+				}
+			}
+
+			.fa-x,
+			.fa-tiktok {
+				display: block;
+				width: 18px;
+				height: 18px;
+				margin: 0 auto;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				
+				@include breakpoint(tablet) {
+					width: 20px;
+					height: 20px;
+				}
+			}
+
+			.fa-x {
+				background-image: url('../assets/img/icon-x_twitter1.png');
+			}
+
+			.fa-tiktok {
+				background-image: url('../assets/img/icon-tiktok-navy.png');
+			}
+		}
+	}
+
+	.button-edit {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: initial;
+		left: initial;
+		right: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 4px;
+		border-radius: 16px;
+		border-top-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	+ .post-profile {
+		margin-top: 5rem;
+	}
+}
+
+.table-area {
+	+ .thumb-post {
+		margin-top: 5rem;
+	}
+}
