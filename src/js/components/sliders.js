@@ -105,38 +105,73 @@ $(function() {
 		}
 	});
 
-	var swiper = new Swiper('.cat-news .sliders.thumb-4 .swiper-container', {
+	var galleryThumbs = new Swiper('.product-detail .image-thumb .thumb-slider .swiper-container', {
 		keyboard: {
 			enabled: true,
 		},
 		grabCursor: true,
-		slidesPerView: 1,
-		spaceBetween: 30,
-		autoHeight: false,
+		slidesPerView: 4,
 		loop: false,
 		loopFillGroupWithBlank: true,
+		spaceBetween: 10,
+		// centeredSlides: true,
+		// centeredSlidesBounds: true, 
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		pagination: false,
+		breakpoints: {
+			767: {
+				spaceBetween: 10,
+				slidesPerView: 4,
+				pagination: false,
+			},
+			1023: {
+				spaceBetween: 10,
+				slidesPerView: 5,
+				pagination: false,
+			},
+		}
+	});
+
+	var galleryMain = new Swiper('.product-detail .image-primary .primary-slider .swiper-container', {
+		keyboard: {
+			enabled: true,
+		},
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: 1,
+		autoHeight: true,
+		effect: 'coverflow',
+		loop: false,
+		loopFillGroupWithBlank: true,
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		preventInteractionOnTransition: true,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
-		scrollbar: {
-			el: ".swiper-scrollbar",
-			hide: false,
+		pagination: false,
+		coverflowEffect: {
+			rotate: 0,
+			stretch: 0,
+			depth: 150,
+			modifier: 4,
+			slideShadows : false,
+		},
+		thumbs: {
+			swiper: galleryThumbs,
 		},
 		breakpoints: {
 			1200: {
-				slidesPerView: 4,
-				spaceBetween: 30,
+				slidesPerView: 2,
 			},
 			1000: {
-				slidesPerView: 3,
-				spaceBetween: 30,
-			},
-			600: {
 				slidesPerView: 2,
-				spaceBetween: 30,
 			},
-		}
+		},
 	});
 
 

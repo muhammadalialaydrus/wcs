@@ -1,0 +1,7 @@
+.blog-listing {
+	.highlight-area {
+		+ .listing-area {
+			margin-top: 50px;
+		}
+	}
+}

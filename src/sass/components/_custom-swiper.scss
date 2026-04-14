@@ -191,9 +191,16 @@
 			}
 		}
 
+		.swiper-slide {
+		}
+
 		.swiper-slide-active {
 			.image-area {
+				padding: 20px;
+
 				figure {
+					pointer-events: auto;
+
 					&:before {
 						background-color: transparent;
 						pointer-events: none;
@@ -211,18 +218,22 @@
 			left: initial;
 			right: initial;
 			margin-top: -20px;
-			background-color: rgba($white, 0.3);
 			color: $white;
+			background: rgba($white, 0.2);
+			border: 1px solid rgba($white, 0.3);
 			box-shadow: 0 1px 3px 0 rgba(27, 27, 27, 0.1), 0 4px 8px 0 rgba(27, 27, 27, 0.1);
-			backdrop-filter: saturate(180%) blur(20px);
+			backdrop-filter: saturate(180%) blur(5px);
+			-webkit-backdrop-filter: saturate(180%) blur(5px);
 			
 			@include breakpoint(tablet) {
+				width: 50px;
+				height: 50px;
 				margin-top: -25px;
 			}
 
 			&:hover {
 				@include breakpoint(desktop) {
-					background-color: $blue;
+					background-color: $button-background;
 					color: $white;
 				}
 			}
@@ -267,34 +278,10 @@
 
 	.image-thumb {
 		.swiper-container {
-			padding: 0;
-
-			@include breakpoint(tablet) {
-				height: 480px;
-			}
-
-			@include breakpoint(wide) {
-				height: 430px;
-			}
-
-			@include breakpoint(desktop) {
-				height: 513px;
-			}
-
-			.swiper-wrapper {
-				@include breakpoint(tablet) {
-					flex-direction: column;
-					// height: 100%!important;
-				}
-			}
+			padding-bottom: 0;
 		}
 
 		.swiper-slide {
-			@include breakpoint(tablet) {
-				// height: auto!important;
-				// height: calc(100% / 6)!important;
-			}
-
 			.image-area {
 				figure {
 					&:before {
@@ -308,12 +295,16 @@
 						pointer-events: none;
 						visibility: hidden;
 						opacity: 0;
-						border: 4px solid $pink;
-						border-radius: 15px;
+						border: 4px solid $link-color;
+						border-radius: 18px;
 						transition: all 0.3s ease-in-out;
 
 						@include breakpoint(tablet) {
 							border-width: 6px;
+						}
+						
+						@include breakpoint(wide) {
+							border-radius: 26px;
 						}
 					}
 				}
@@ -326,6 +317,13 @@
 							pointer-events: visible;
 							visibility: visible;
 							opacity: 1;
+						}
+
+						&:after {
+							background-color: transparent;
+							pointer-events: none;
+							visibility: hidden;
+							opacity: 0;
 						}
 					}
 				}

@@ -141,10 +141,32 @@ body {
 		}
 	}
 
+	.header-left {
+		@include breakpoint(desktop) {
+			width: 30%;
+		}
+	}
+
+	.header-right {
+		@include breakpoint(desktop) {
+			width: 30%;
+		}
+
+		.nav-menu {
+			@include breakpoint(desktop) {
+				justify-content: flex-end;
+			}
+		}
+	}
+
 	.header-logo {
 		display: block;
 		z-index: 2;
 		position: relative;
+
+		@include breakpoint(desktop) {
+			width: 30%;
+		}
 	}
 
 	.brand-logo {
@@ -154,6 +176,10 @@ body {
 		
 		@include breakpoint(small-mobile) {
 			font-size: 1.34em;
+		}
+
+		@include breakpoint(desktop) {
+			text-align: center;
 		}
 
 		a {
@@ -170,7 +196,7 @@ body {
 
 		.logo {
 			display: block;
-			width: 120px;
+			width: 110px;
 			height: 40px;
 			background-image: url('../assets/img/logo-white.png');
 			background-position: center;
@@ -179,21 +205,17 @@ body {
 			transition: all 0.3s linear;
 
 			@include breakpoint(tablet) {
-				width: 180px;
+				width: 120px;
 				height: 44px;
 			}
 
 			@include breakpoint(desktop) {
-				width: 150px;
+				width: 110px;
 				height: 40px;
 			}
 
-			@include breakpoint(laptop) {
-				width: 180px;
-			}
-
 			@include breakpoint(small-mobile) {
-				width: 86px;
+				width: 90px;
 			}
 		}
 
@@ -481,15 +503,15 @@ body {
 
 			.button-search {
 				font-size: 1.2rem;
-				line-height: 40px;
+				line-height: 38px;
 				text-align: center;
 				background-color: transparent;
 				border: 0;
 				width: 40px;
 				height: 40px;
 				padding: 0;
-				background: rgba(255, 255, 255, 0.2);
-				border: 1px solid rgba(255, 255, 255, 0.3);
+				background: rgba($white, 0.2);
+				border: 1px solid rgba($white, 0.3);
 				backdrop-filter: saturate(180%) blur(5px);
 				-webkit-backdrop-filter: saturate(180%) blur(5px);
 				color: $white;

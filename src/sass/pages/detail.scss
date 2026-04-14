@@ -1,4 +1,4 @@
-.news-detail-inside {
+.blog-detail-inside {
 	.header-detail {
 		.tags {
 			h6 {
@@ -36,7 +36,7 @@
 		h2 {
 			font-size: 1.5rem;
 			line-height: 120%;
-			color: $black;
+			color: $title-color;
 
 			@include breakpoint(tablet) {
 				font-size: 2rem;
@@ -45,272 +45,6 @@
 
 		+ .author-bookmark {
 			margin-top: 24px;
-		}
-	}
-
-	.author-bookmark {
-		@include breakpoint(tablet) {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		.author-info {
-			@include breakpoint(tablet) {
-				width: 70%;
-			}
-
-			.wrapper {
-				display: flex;
-				flex-wrap: nowrap;
-				align-items: center;
-				gap: 8px;
-			}
-
-			.image-area {
-				flex: 0 0 40px;
-				max-width: 40px;
-				flex-basis: 0;
-				flex-grow: 1;
-				
-				@include breakpoint(tablet) {
-					flex: 0 0 50px;
-					max-width: 50px;
-				}
-
-				.images {
-					position: relative;
-					width: 100%;
-					height: 0;
-					padding: 0 0 100%;
-				}
-
-				img {
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					width: 100%;
-					height: 100%;
-					-o-object-fit: cover;
-					object-fit: cover;
-				}
-
-				.text-logo {
-					font-size: 1.3em;
-					text-align: center;
-					line-height: 40px;
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					width: 100%;
-					height: 100%;
-					color: $white;
-					background-color: $blue;
-					border-radius: 100%;
-					
-					@include breakpoint(tablet) {
-						font-size: 1.5em;
-						line-height: 50px;
-					}
-				}
-			}
-
-			.info-area {
-				flex-basis: 0;
-				flex-grow: 1;
-				max-width: 100%;
-				// flex: 0 0 auto;
-				// width: auto;
-
-				h4 {
-					font-size: 1em;
-					color: $dark;
-
-					@include breakpoint(tablet) {
-						font-size: 1.3em;
-					}
-
-					a {
-						color: $dark;
-
-						&:hover {
-							color: $blue;
-						}
-					}
-					
-					+ .auth-date {
-						margin-top: 2px;
-					}
-				}
-
-				.auth-date {
-					padding: 0;
-					list-style: none;
-					display: flex;
-					flex-wrap: nowrap;
-
-					li {
-						position: relative;
-						margin: 0;
-
-						+ li {
-							padding-left: 12px;
-							margin-left: 8px;
-
-							&:before {
-								content: "";
-								width: 4px;
-								height: 4px;
-								background-color: #c2c2c2;
-								border-radius: 100%;
-								position: absolute;
-								top: 50%;
-								bottom: initial;
-								left: 0;
-								right: initial;
-								margin-top: -2px;
-							}
-						}
-					}
-
-					h6 {
-						font-size: 0.8em;
-						color: $semi-grey;
-					}
-
-					.auth-name {
-						span {
-							text-transform: uppercase;
-							text-decoration: underline;
-						}
-
-						a {
-							text-transform: uppercase;
-							text-decoration: underline;
-							color: $semi-grey;
-
-							&:hover {
-								color: $blue;
-							}
-						}
-					}
-				}
-			}
-
-			+ .bookmark-likes {
-				margin-top: 24px;
-				
-				@include breakpoint(tablet) {
-					margin-top: 0;
-				}
-			}
-		}
-
-		.bookmark-likes {
-			.wrapper {
-				display: flex;
-				flex-wrap: nowrap;
-				align-items: center;
-				gap: 16px;
-
-				@include breakpoint(tablet) {
-					gap: 32px;
-				}
-			}
-
-			.icon-text {
-				@include breakpoint(mobile) {
-					flex-basis: 0;
-					flex-grow: 1;
-					max-width: 100%;
-				}
-
-				&.bookmark-area {
-					a {
-						&.active {
-							@include breakpoint(mobile) {
-								background-color: $tosca;
-								color: $white;
-							}
-
-							@include breakpoint(tablet) {
-								color: $tosca;
-							}
-
-							.icon {
-								font-weight: 900;
-							}
-						}
-					}
-				}
-
-				&.likes-area {
-					a {
-						&.active {
-							@include breakpoint(mobile) {
-								background-color: #f10169;
-								color: $white;
-							}
-
-							@include breakpoint(tablet) {
-								color: #f10169;
-							}
-
-							.icon {
-								font-weight: 900;
-							}
-						}
-					}
-				}
-
-				a {
-					display: flex;
-					flex-wrap: nowrap;
-					align-items: center;
-					gap: 8px;
-					color: $dark;
-
-					@include breakpoint(mobile) {
-						padding: 12px 16px;
-						justify-content: center;
-						background-color: $light-blue;
-						border-radius: 10px;
-					}
-
-					&:hover {
-						color: $blue;
-					}
-				}
-
-				.icon {
-					font-size: 1.3em;
-					
-					@include breakpoint(tablet) {
-						font-size: 1.6em;
-					}
-					
-					@include breakpoint(small-mobile) {
-						font-size: 1.2em;
-					}
-				}
-
-				.text {
-					font-size: 0.9em;
-					
-					// @include breakpoint(tablet) {
-					// 	font-size: 1.1em;
-					// }
-					
-					@include breakpoint(small-mobile) {
-						font-size: 0.8em;
-					}
-				}
-			}
 		}
 	}
 
@@ -329,7 +63,7 @@
 			padding: 40px 0;
 
 			+ .content-foot {
-				border-top: 1px solid $border-gray;
+				border-top: 1px solid $border-light;
 			}
 		}
 	}
@@ -351,9 +85,10 @@
 			h4,
 			h5,
 			h6 {
-				color: $dark;
-				font-family: 'inter-bold';
+				color: $title-color;
+				font-family: 'montserrat-bold';
 				margin-bottom: 1em;
+				line-height: 130%;
 
 				+ ul,
 				+ ol,
@@ -392,7 +127,7 @@
 				// color: $dark;
 
 				// &:hover {
-				// 	color: $blue;
+				// 	color: $link-color;
 				// }
 			}
 
@@ -485,7 +220,7 @@
 			.icon {
 				font-size: 8rem;
 				line-height: 100%;
-				color: $bg-light-blue;
+				color: $light-pink;
 				position: absolute;
 				z-index: -1;
 				top: 0;
@@ -503,7 +238,7 @@
 				font-size: 1.6rem;
 				line-height: 130%;
 				font-style: italic;
-				color: $blue;
+				color: $pink;
 				
 				@include breakpoint(tablet) {
 					font-size: 2.2rem;
@@ -513,7 +248,7 @@
 			.name {
 				font-size: 1.1rem;
 				font-style: italic;
-				color: $semi-blue;
+				color: $body-color;
 				
 				@include breakpoint(tablet) {
 					font-size: 1.3rem;
@@ -536,7 +271,7 @@
 		}
 
 		+ .share-area {
-			border-top: 1px solid $border-gray;
+			border-top: 1px solid $border-light;
 			margin-top: 6rem;
 		}
 
@@ -617,7 +352,7 @@
 				&.link {
 					a {
 						&:hover {
-							background-color: $blue;
+							background-color: $link-color;
 						}
 					}
 				}
@@ -629,9 +364,9 @@
 			font-size: 1.3em;
 			line-height: 100%;
 			text-align: center;
-			color: $dark;
+			color: $title-color;
 			display: block;
-			background-color: $light-blue;
+			background-color: $light-pink;
 			width: 36px;
 			height: 36px;
 			padding: 9px 0;
@@ -654,7 +389,7 @@
 
 			&:hover {
 				color: $white;
-				background-color: $blue;
+				background-color: $link-color;
 			}
 		}
 
@@ -684,8 +419,8 @@
 		.wrapper {
 			text-align: center;
 			padding: 24px;
-			background-color: $light-blue;
-			border-radius: 16px;
+			background-color: $light-pink;
+			border-radius: 30px;
 			
 			@include breakpoint(tablet) {
 				text-align: left;
@@ -694,7 +429,6 @@
 				flex-wrap: nowrap;
 				align-items: center;
 				gap: 16px;
-				border-radius: 20px;
 			}
 		}
 
@@ -733,7 +467,7 @@
 					right: 0;
 					width: 100%;
 					height: 100%;
-					background-color: $blue;
+					background-color: $button-background;
 					color: $white;
 					border-radius: 100%;
 				}
@@ -753,7 +487,7 @@
 				font-size: 0.85em;
 				text-transform: uppercase;
 				letter-spacing: 0.5pt;
-				color: #7ca1d2;
+				color: $body-color;
 
 				+ h4 {
 					margin-top: 8px;
@@ -762,17 +496,17 @@
 
 			h4 {
 				font-size: 1.4em;
-				color: $dark;
+				color: $title-color;
 				
 				@include breakpoint(tablet) {
 					font-size: 1.6em;
 				}
 
 				a {
-					color: $dark;
+					color: $title-color;
 
 					&:hover {
-						color: $blue;
+						color: $link-color;
 					}
 				}
 
@@ -783,7 +517,7 @@
 
 			p {
 				font-size: 0.9em;
-				color: $text-semi-blue;
+				color: $body-color;
 
 				@include breakpoint(tablet) {
 					font-size: 1em;
@@ -816,11 +550,12 @@
 
 			&:hover {
 				.post-wrapper {
-					background-color: $blue;
+					background-color: $button-background;
 				}
 
 				h6 {
-					color: #c2d4ed;
+					color: $body-color;
+					color: rgba($white, 0.5);
 				}
 
 				h5 {
@@ -840,10 +575,10 @@
 
 		.post-wrapper {
 			position: relative;
-			background-color: $light-blue;
+			background-color: $light-pink;
 			padding: 16px 20px;
 			overflow: hidden;
-			border-radius: 16px;
+			border-radius: 30px;
 			transition: all 0.3s linear;
 			
 			@include breakpoint(wide) {
@@ -854,7 +589,7 @@
 		h6 {
 			font-size: 0.85rem;
 			text-transform: uppercase;
-			color: #7ca1d2;
+			color: $body-color;
 			transition: all 0.3s linear;
 
 			+ h5 {
@@ -864,6 +599,7 @@
 
 		h5 {
 			font-size: 1.1rem;
+			color: $title-color;
 			transition: all 0.3s linear;
 			
 			@include breakpoint(wide) {
@@ -881,7 +617,7 @@
 	}
 
 	.input-comments-area {
-		border-bottom: 1px solid $border-gray;
+		border-bottom: 1px solid $border-light;
 
 		.info-alert {
 			text-align: center;
@@ -908,14 +644,14 @@
 
 			.form-control {
 				border: 0;
-				background-color: $light-blue;
-				color: $dark;
+				background-color: $light-pink;
+				color: $title-color;
 				padding: 16px;
-				border-radius: 16px;
+				border-radius: 30px;
 
 				&::placeholder {
 					font-style: italic;
-					color: $text-semi-blue;
+					color: $body-color;
 				}
 			}
 
@@ -924,11 +660,15 @@
 					height: 130px;
 					resize: none;
 				}
+
+				&:focus {
+					box-shadow: 0 0 0 .2rem rgba($pink, 0.25);
+				}
 			}
 
 			.comment-counter {
 				font-size: 0.9em;
-				color: $semi-grey;
+				color: $body-color;
 			}
 
 			.flex-wrapper {
@@ -1016,7 +756,7 @@
 						right: 0;
 						width: 100%;
 						height: 100%;
-						background-color: $blue;
+						background-color: $link-color;
 						color: $white;
 						
 						@include breakpoint(tablet) {
@@ -1041,7 +781,7 @@
 				}
 
 				h6 {
-					color: $semi-grey;
+					color: $body-color;
 					font-size: 0.85em;
 					
 					@include breakpoint(tablet) {
@@ -1055,6 +795,10 @@
 			}
 
 			.content-comment {
+				p {
+					color: $title-color;
+				}
+
 				+ .vote-reply {
 					margin-top: 16px;
 				}
@@ -1068,18 +812,18 @@
 
 				a {
 					font-size: 0.9em;
-					color: $semi-grey;
+					color: $body-color;
 					
 					@include breakpoint(tablet) {
 						font-size: 1em;
 					}
 
 					&:hover {
-						color: $blue;
+						color: $link-color;
 					}
 
 					&.active {
-						color: $blue;
+						color: $link-color;
 
 						.icon {
 							font-weight: 900;
@@ -1106,7 +850,7 @@
 							+ li {
 								padding-left: 16px;
 								margin-left: 16px;
-								border-left: 1px solid #c2c2c2;
+								border-left: 1px solid $border-light;
 							}
 						}
 					}
@@ -1118,7 +862,7 @@
 							content: "";
 							width: 4px;
 							height: 4px;
-							background-color: #c2c2c2;
+							background-color: $body-color;
 							border-radius: 100%;
 							position: absolute;
 							top: 50%;
@@ -1134,51 +878,6 @@
 					position: relative;
 				}
 			}
-		}
-	}
-
-	.button-publish {
-		ul {
-			padding: 0;
-			list-style: none;
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: space-between;
-
-			li {
-				display: flex;
-				flex-wrap: wrap;
-				align-items: center;
-				gap: 8px;
-
-				.button {
-					font-size: 1em;
-					padding: 14px 20px;
-					border: 0;
-					display: flex;
-					flex-wrap: wrap;
-					align-items: center;
-					gap: 8px;
-
-					@include breakpoint(small-mobile) {
-						font-size: 0.9em;
-						padding: 14px 16px;
-					}
-				}
-			}
-		}
-
-		&.sticky-action-button {
-			position: sticky;
-			z-index: 2;
-			bottom: 10px;
-			padding: 10px;
-			margin-left: -10px;
-			margin-right: -10px;
-			background-color: rgba($white, 0.5);
-			border-radius: 10px;
-			backdrop-filter: saturate(180%) blur(20px);
 		}
 	}
 }

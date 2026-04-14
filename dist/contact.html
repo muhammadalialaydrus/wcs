@@ -8,7 +8,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="robots" content="index, follow" />
 		<meta name="generator" content="All in One SEO (AIOSEO) 4.6.6" />
-		<title>{{ head_title }} &middot; WCS</title>
+		<title>Contact Page &middot; WCS</title>
 		<meta name="description" content="Description Here...">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -42,7 +42,7 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 
-	<body {% if body_class is defined and body_class is not empty %} class="{{ body_class }}"{% endif %}>
+	<body  class="contact">
 		<header class="header-fix">
 			<div class="container">
 				<nav class="header-menu">
@@ -115,8 +115,8 @@
 									</form>
 								</div>
 							</li>
-							{# <li> #}
-								{# =================== Menu Sebelum Login =================== #}
+							
+								
 								<!-- <div class="dropdown-profile">
 									<div class="custom-nav-profile" data-toggle="dropdown" aria-expanded="false">
 					                    <div class="user-menu">
@@ -131,33 +131,12 @@
 										<a class="dropdown-item" href="login.html">Login</a>
 									</div>
 								</div> -->
-								{# =================== End Menu Sebelum Login =================== #}
+								
 
-								{# =================== Menu Setelah Login =================== #}
-								{# <div class="dropdown-profile">
-									<div class="custom-nav-profile" data-toggle="dropdown" aria-expanded="false">
-					                    <div class="user-menu">
-					                        <div class="user-image">
-					                        	<figure>
-					                            	<img src="assets/img/photos/dummy_1.webp" alt="user">
-													<!-- <span class="text-logo font-text-semibold">J</span> -->
-					                        	</figure>
-					                        </div>
-					                    </div>
-					                    <div class="user-info">
-					                        <h6 class="font-text-medium">Hello,</h6>
-					                        <h5 class="font-text-semibold">John Doe</h5>
-					                    </div>
-					                </div>
-					                <div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="profile.html">My Profile</a>
-										<a class="dropdown-item" href="password.html">Update Password</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="login.html">Sign Out</a>
-									</div>
-								</div> #}
-								{# =================== End Menu Setelah Login =================== #}
-							{# </li> #}
+								
+								
+								
+							
 							<li class="show-tablet">
 								<div class="toggle-down">
 									<div class="menu-toggle-btn">
@@ -246,7 +225,39 @@
 		</div>
 		<div class="backdrop-global"></div>
 		<main id="main">
-{% block page %}{% endblock %}
+
+			<div class="page-content">
+				<div class="contact-page">
+					<section class="header-page">
+						<div class="header-wrapper">
+							<div class="container">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item" data-aos="fade-in">
+											<a href="index.html">
+												<span class="fa fa-home"></span>
+											</a>
+										</li>
+										<li class="breadcrumb-item active" data-aos="fade-in" aria-current="page">Contact</li>
+									</ol>
+								</nav>
+								<div class="title-page">
+									<h2 class="font-text-bold" data-aos="fade-in">Contact</h2>
+									<h6 data-aos="fade-in">Description Here</h6>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content-page">
+						<div class="container">
+							<div class="contact-content">
+								
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
 			<div class="consult-info" data-aos="fade-in">
 				<div class="container">
 					<div class="consult-area">
@@ -266,16 +277,179 @@
 					</a>
 				</div>
 			</div>
-			{# <div class="floating-button back-top">
-				<div class="button-wrapper">
-					<a href="#main" class="button-inside is-scroll">
-						<span class="icon-arrow"></span>
-					</a>
-				</div>
-			</div> #}
+			
 		</main>
-{% include '../partials/footer.twig' %}
-		<script src="js/vendor.js"></script>
+		<footer id="footer" data-aos="fade-in">
+			<div class="nav-top">
+				<div class="container">
+					<div class="footer-wrapper">
+						<div class="row justify-content-start">
+							<div class="col-lg-4">
+								<div class="footer-logo" data-aos="fade-in">
+									<a href="#">
+										<figure>
+											<img src="assets/img/logo-white.png" alt="Simplo">
+										</figure>
+									</a>
+								</div>
+								<div class="footer-info">
+									<h6 class="font-text-semibold" data-aos="fade-in">
+										PT. Wulan Cipta Sejati
+									</h6>
+								</div>
+								<div class="footer-contact" data-aos="fade-in">
+									<ul>
+										<li class="contact-list">
+											<div class="nav-contact align-items-center">
+												<div class="icon-area">
+													<i class="fa fa-phone"></i>
+												</div>
+												<div class="info-area">
+													<h5 class="font-text-semibold">
+														<a href="#">0812-61-805-000</a>
+													</h5>
+												</div>
+											</div>
+										</li>
+										<li class="contact-list">
+											<div class="nav-contact align-items-center">
+												<div class="icon-area">
+													<i class="fa fa-envelope"></i>
+												</div>
+												<div class="info-area">
+													<h5 class="font-text-semibold">
+														<a href="#">wulanciptasejatipt@gmail.com</a>
+													</h5>
+												</div>
+											</div>
+										</li>
+										<li class="contact-list">
+											<div class="nav-contact">
+												<div class="icon-area">
+													<i class="fa fa-map-marker"></i>
+												</div>
+												<div class="info-area">
+													<ul>
+														<li>
+															<h5 class="font-text-semibold">Office</h5>
+															<h6>Jl. Ki Hajar Dewantara, Ruko Golden 8, Blok G, No. 46, Kabupaten Tangerang, Banten</h6>
+														</li>
+														<li>
+															<h5 class="font-text-semibold">Production Centre</h5>
+															<h6>Jl. Maruga Raya No.1, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten</h6>
+														</li>
+														<li>
+															<h5 class="font-text-semibold">Assembling Centre</h5>
+															<h6>Jl. Kali Baru Barat No.8, RT.011/RW.010, Kota Baru, Kec. Bekasi Bar., Kota Bks, Jawa Barat 17133</h6>
+														</li>
+														<li>
+															<h5 class="font-text-semibold">Foundry</h5>
+															<h6>Jl. Kop. Batur Jaya, Tegalrejo, Kec. Ceper, Kabupaten Klaten, Jawa Tengah 57465</h6>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-8 col-lg-4">
+								<div class="footer-nav" data-aos="fade-in">
+									<div class="nav-group">
+										<h6 class="font-text-semibold">Our Services</h6>
+										<div class="row">
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Drone</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Genset</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Tractor</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Water Pump</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Videotron</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">IWB Screen</a>
+											</div>
+										</div>
+									</div>
+									<div class="nav-group">
+										<h6 class="font-text-semibold">Navigation</h6>
+										<div class="row">
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Home</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">About Us</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Services</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Client</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Portfolio</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Blog</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Contact</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="footer-sosmed">
+									<ul class="content-list social flat">
+										<li class="linkedin" data-aos="zoom-in">
+											<a href="#" target="_blank">
+												<i class="fab fa-linkedin"></i>
+											</a>
+										</li>
+										<li class="facebook" data-aos="zoom-in">
+											<a href="#" target="_blank">
+												<i class="fa fa-facebook"></i>
+											</a>
+										</li>
+										<li class="instagram" data-aos="zoom-in">
+											<a href="#" target="_blank">
+												<i class="fab fa-instagram"></i>
+											</a>
+										</li>
+										<li class="youtube" data-aos="zoom-in">
+											<a href="#" target="_blank">
+												<i class="fab fa-youtube"></i>
+											</a>
+										</li>
+										<li class="tiktok" data-aos="zoom-in">
+											<a href="#" target="_blank">
+												<i class="icon-buttom fa-tiktok"></i>
+											</a>
+										</li>
+									</ul>
+									<p class="font-alt-regular" data-aos="fade-in">Ikuti media sosial kami agar tidak terlewatkan promo dan berita terbaru kami.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-bottom">
+				<div class="container">
+					<p class="font-alt-regular">
+						<strong class="font-alt-semibold">PT. Wulan Cipta Sejati</strong>. ©2026. All Rights Reserved.
+					</p>
+				</div>
+			</div>
+		</footer>		<script src="js/vendor.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/main.min.js"></script>
 	</body>

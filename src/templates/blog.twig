@@ -1,0 +1,536 @@
+{% extends 'layouts/default.twig' %}
+{% set body_class = 'blog' %}
+{% set head_title = 'Blog Page' %}
+{% block page %}
+
+			<div class="page-content">
+				<div class="detail-page">
+					<section class="header-page">
+						<div class="header-wrapper">
+							<div class="container">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item" data-aos="fade-in">
+											<a href="index.html">
+												<span class="fa fa-home"></span>
+											</a>
+										</li>
+										<li class="breadcrumb-item active" data-aos="fade-in" aria-current="page">Blog</li>
+									</ol>
+								</nav>
+								<div class="title-page">
+									<h2 class="font-text-bold" data-aos="fade-in">Blog &amp; Article</h2>
+									<h6 data-aos="fade-in">See our latest News</h6>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="content-page">
+						<div class="container">
+							<div class="blog-listing">
+								<div class="highlight-area">
+									<div class="thumbnails">
+										<div class="thumbnail-wrapper">
+											<div class="row">
+												<div class="col-xl-8 side-left">
+													<div class="thumbnail-medium" data-aos="fade-right">
+														<div class="row align-items-center">
+															<div class="col-md-7 col-xl-8">
+																<div class="image-area">
+																	<a href="blog-detail.html">
+																		<figure>
+																			<div class="images br-40">
+																				<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar2.jpg" alt="">
+																			</div>
+																			<figcaption class="photo-caption">Disini buat copyright foto kalo ada</figcaption>
+																		</figure>
+																	</a>
+																</div>
+															</div>
+															<div class="col-md-5 col-xl-4 order-md-first">
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-3 font-text-semibold">
+																		<a href="blog-detail.html">
+																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at urna odio. Quisque consectetur eget ipsum quis tristique. Cras sed tellus fringilla, bibendum massa at, sagittis metus.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-3">
+																		Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">Rendra Safutra</a></h6>
+																		</li>
+																		<li>
+																			<h6>1 April 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-4 side-right">
+													<ul class="thumbnail-list">
+														<li class="thumbnail-item" data-aos="fade-left">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="blog-detail.html">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium1.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="blog-detail.html">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">Admin</a></h6>
+																		</li>
+																		<li>
+																			<h6>30 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-left">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="blog-detail.html">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park1.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="blog-detail.html">
+																			Nam mauris lorem, porttitor eget sapien ut, mollis consequat purus. Proin vehicula, libero eget euismod facilisis, dolor ante facilisis dolor, et imperdiet mauris arcu ac magna.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Sed ut ex sit amet erat vehicula sagittis. Maecenas in luctus nisl, in fringilla turpis. Nullam pulvinar pretium ipsum sit amet consectetur.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>28 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-left">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="blog-detail.html">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar4.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="blog-detail.html">
+																			Aenean sagittis mauris sed ante viverra, ac faucibus magna tincidunt. Cras porttitor odio eu aliquam iaculis.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Praesent ante urna, pretium ac tortor ac, egestas pellentesque enim. Aliquam quis lacus sapien. Mauris placerat mattis tincidunt. Etiam fringilla elementum aliquet.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>27 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="listing-area">
+									<div class="listing-wrapper">
+										<div class="row">
+											<div class="col-xl-8">
+												<div class="thumbnails">
+													<ul class="thumbnail-list large">
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar1.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium2.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar3.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park2.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park4.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park5.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+														<li class="thumbnail-item" data-aos="fade-right">
+															<div class="wrapper">
+																<div class="image-area">
+																	<a href="#">
+																		<figure>
+																			<div class="images br-24">
+																				<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium3.jpg" alt="">
+																			</div>
+																		</figure>
+																	</a>
+																</div>
+																<div class="info-area">
+																	<ul class="tags">
+																		<li>
+																			<h6>
+																				<a href="listing.html">Construction</a>
+																			</h6>
+																		</li>
+																		<li>
+																			<h6>
+																				<a href="listing.html">Hotel</a>
+																			</h6>
+																		</li>
+																	</ul>
+																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
+																		<a href="#">
+																			Phasellus nisl velit, mollis ac gravida vel, porttitor porttitor ex. Etiam non mattis urna. Nullam non porta augue. Nunc dictum vehicula erat, in tincidunt neque tristique in.
+																		</a>
+																	</h3>
+																	<p class="desc-thumbs text-ellipsis overflow-hidden line-clamp-2">
+																		Maecenas enim justo, sollicitudin porttitor erat sit amet, euismod ullamcorper arcu. Nulla vel tortor felis. Quisque tellus ante, ultrices at eleifend nec, iaculis nec nisi.
+																	</p>
+																	<ul class="auth-date">
+																		<li>
+																			<h6 class="auth-name font-text-italic">By <a href="#">John Doe</a></h6>
+																		</li>
+																		<li>
+																			<h6>20 Maret 2026</h6>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="paging-area">
+													<nav aria-label="Product navigation">
+														<ul class="pagination justify-content-center">
+															<li class="page-item disabled" data-aos="zoom-in">
+																<!-- <a class="page-link">
+																	<span class="fa fa-angle-left"></span>
+																</a> -->
+																<span class="page-link">
+																	<span class="fa fa-angle-left"></span>
+																</span>
+															</li>
+															<li class="page-item" data-aos="zoom-in">
+																<a class="page-link" href="#">1</a>
+															</li>
+															<li class="page-item active" aria-current="page" data-aos="zoom-in">
+																<span class="page-link">2</span>
+															</li>
+															<li class="page-item" data-aos="zoom-in">
+																<a class="page-link" href="#">3</a>
+															</li>
+															<li class="page-item" data-aos="zoom-in">
+																<a class="page-link" href="#">
+																	<span class="fa fa-angle-right"></span>
+																</a>
+															</li>
+														</ul>
+													</nav>
+												</div>
+											</div>
+											<div class="col-xl-4">
+{% include './partials/sidebar.twig' %}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+
+{% endblock %}
