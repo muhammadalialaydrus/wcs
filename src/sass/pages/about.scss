@@ -1,0 +1,68 @@
+.about-page {
+	p {
+		font-size: 1.1rem;
+		line-height: 150%;
+
+		@include breakpoint(tablet) {
+			font-size: 1.15rem;
+		}
+	}
+
+	.company-profile {
+		+ .company-history {
+			margin-top: 50px;
+		}
+
+		.sublabel {
+			h5 {
+				font-size: 1.2rem;
+				text-transform: uppercase;
+				letter-spacing: 0.5pt;
+				color: $title-highlight-color;
+			}
+
+			+ .content-inside {
+				margin-top: 20px;
+			}
+		}
+		
+		.content-list {
+			h6 {
+				color: $title-color;
+				font-size: 1.15rem;
+				
+				@include breakpoint(tablet) {
+					font-size: 1.2rem;
+				}
+
+				+ p {
+					margin-top: 10px;
+				}
+			}
+
+			+ .content-list {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.vision-mission-area {
+		.row {
+			[class*="col-"] {
+				+ [class*="col-"] {
+					margin-top: 30px;
+					
+					@include breakpoint(tablet) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.profile-area {
+		+ .vision-mission-area {
+			margin-top: 30px;
+		}
+	}
+}

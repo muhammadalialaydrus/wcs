@@ -53,6 +53,19 @@ $(function() {
 	$(".bookmark-likes .icon-text a").click(function(){
 		$(this).toggleClass("active");
 	});
+
+	var dots = $(".contact-page .map-point .dots");
+
+	$(".contact-page .map-point .dots").on("click", function(event) {
+		event.stopPropagation();
+		$(this).toggleClass("click").siblings(".point-tooltip").toggleClass("showing");
+	});
+
+	$(document).on('click', function(event) {
+		if (!$(event.target).closest(".point-tooltip").length)  {
+			$(".point-tooltip").removeClass("showing");
+		}
+	});
 	
 
 	// $(window).on('resize', function(){
