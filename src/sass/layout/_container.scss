@@ -5,6 +5,7 @@
 html {
 	font-size: $font-size-base;
 	line-height: $line-height-base;
+	background-color: $pink;
 
 	&.no-scroll {
 		overflow: hidden;

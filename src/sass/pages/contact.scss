@@ -258,6 +258,12 @@
 		}
 	}
 
+	.location-area {
+		@include breakpoint(laptop) {
+			padding: 0 10%;
+		}
+	}
+
 	.branch-location {
 		margin-top: -10px;
 		
@@ -284,7 +290,6 @@
 				padding-left: 15px;
 				padding-right: 15px;
 			}
-			// + [class*="col-"] {}
 		}
 	}
 
