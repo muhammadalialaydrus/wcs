@@ -279,9 +279,13 @@ b {
 
 	.divider {
 		display: block;
-		width: 100%;
+		width: 50%;
 		height: 1px;
 		background-color: $border-light;
+		
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
 	}
 
 	.viewmore {
@@ -301,11 +305,12 @@ b {
 		font-size: 1.1rem;
 		line-height: 100%;
 		text-transform: uppercase;
-		white-space: nowrap;
+		// max-width: 65%;
 		letter-spacing: 0.5pt;
 		
 		@include breakpoint(tablet) {
 			font-size: 1.3rem;
+			white-space: nowrap;
 		}
 	}
 
@@ -2807,6 +2812,73 @@ b {
 
 	+ .paging-area {
 		margin-top: 48px;
+	}
+}
+
+.search-sort {
+	padding: 10px 0;
+
+	.wrapper-search {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	
+		@include breakpoint(tablet) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.search-area {
+		width: 100%;
+		
+		@include breakpoint(tablet) {
+			width: auto;
+		}
+
+		+ .sort-area {
+			margin-top: 10px;
+		
+			@include breakpoint(tablet) {
+				margin-top: 0;
+			}
+		}
+
+		.button {
+			font-size: 1rem;
+			text-align: center;
+			line-height: 30px;
+			padding: 0;
+			width: 30px;
+			height: 30px;
+			border: 0;
+			position: absolute;
+			top: 5px;
+			bottom: initial;
+			left: initial;
+			right: 5px;
+		}
+	}
+
+	.sort-area {
+		ul {
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+
+			li {
+				display: block;
+				margin: 0;
+			}
+		}
+	}
+
+	+ .portfolio-content {
+		margin-top: 30px;
 	}
 }
 

@@ -1,0 +1,125 @@
+.services-page {
+	.service-inside {
+		margin-top: 20px;
+
+		@include breakpoint(tablet) {
+			margin: 100px 0 60px;
+		}
+
+		& > [class*="col-"] {
+			padding: 10px;
+
+			@include breakpoint(tablet) {
+				padding: 15px;
+			}
+		}
+
+		.box {
+			position: relative;
+			z-index: 0;
+
+			&:hover {
+				.wrapper {
+					background-color: $button-background;
+				}
+
+				.name-area {
+					h5 {
+						color: $white;
+					}
+				}
+
+				.desc-area {
+					p {
+						color: rgba($white, 0.5);
+					}
+				}
+
+				.icon {
+					&.icon-agriculture {
+						background-image: url('../assets/img/icon/icon-agriculture-white.png');
+					}
+
+					&.icon-construction {
+						background-image: url('../assets/img/icon/icon-construction-white.png');
+					}
+				}
+			}
+
+			.wrapper {
+				background-color: $white;
+				padding: 30px 40px;
+				text-align: center;
+				height: 100%;
+				border-radius: 60px;
+				transition: $transition-base;
+				
+				@include breakpoint(tablet) {
+					padding: 20px;
+					border-radius: 50px;
+				}
+				
+				@include breakpoint(wide) {
+					padding: 30px 40px;
+					border-radius: 60px;
+				}
+			}
+
+			.icon-area {
+				+ .name-area {
+					margin-top: 20px;
+				}
+			}
+
+			.name-area {
+				h5 {
+					font-size: 1.25em;
+					color: $title-color;
+					transition: $transition-base;
+
+					@include breakpoint(tablet) {
+						font-size: 1.35em;
+					}
+				}
+
+				+ .desc-area {
+					margin-top: 10px;
+				}
+			}
+
+			.desc-area {
+				p {
+					transition: $transition-base;
+				}
+			}
+
+			.icon {
+				display: inline-block;
+				vertical-align: middle;
+				width: 80px;
+				height: 80px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				transition: $transition-base;
+
+				&.icon-agriculture {
+					background-image: url('../assets/img/icon/icon-agriculture.png');
+				}
+
+				&.icon-construction {
+					background-image: url('../assets/img/icon/icon-construction.png');
+				}
+			}
+
+			.click-area {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}

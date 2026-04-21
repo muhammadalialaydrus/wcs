@@ -55,10 +55,31 @@
 	}
 
 	.vision-mission-area {
-		.row {
+		.vision {
+			+ .mission {
+				margin-top: 30px;
+			}
+		}
+
+		.mission {
+			.sublabel {
+				+ .content-inside {
+					@include breakpoint(tablet) {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+
+		.content-inside {
 			[class*="col-"] {
+				@include breakpoint(tablet) {
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+
 				+ [class*="col-"] {
-					margin-top: 30px;
+					margin-top: 20px;
 					
 					@include breakpoint(tablet) {
 						margin-top: 0;
@@ -66,6 +87,7 @@
 				}
 			}
 		}
+
 	}
 
 	.profile-area {

@@ -249,7 +249,7 @@
 }
 
 .client-info {
-	background-color: $white;
+	background-color: $light-pink;
 	padding: 3.6rem 0;
 
 	// .title-section {
@@ -278,7 +278,7 @@
 
 	.client-wrapper {
 		padding: 1rem 1.5rem;
-		border: 1px solid $border-color;
+		background-color: $white;
 		border-radius: 30px;
 		overflow: hidden;
 	}
@@ -664,9 +664,6 @@
 		}
 	}
 }
-
-
-
 
 .product-slider {
 	.slider-area {

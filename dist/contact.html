@@ -71,19 +71,23 @@
 								</a>
 							</li>
 							<li>
-								<a href="service.html" class="font-text-semibold" data-toggle="dropdown" aria-expanded="false">
-									<span>Services</span>
+								<a href="agriculture.html" class="font-text-semibold">
+									<span>Agriculture</span>
+								</a>
+							</li>
+							<li>
+								<a href="construction.html" class="font-text-semibold" data-toggle="dropdown" aria-expanded="false">
+									<span>Construction</span>
 									<span class="icon fa fa-angle-down"></span>
 								</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item font-text-semibold" href="service.html">Agriculture</a>
-									<a class="dropdown-item font-text-semibold" href="construction.html">Construction</a>
+									<a class="dropdown-item font-text-semibold" href="building-construction.html">Building Construction</a>
+									<a class="dropdown-item font-text-semibold" href="infrastructure-development.html">Infrastructure Development</a>
+									<a class="dropdown-item font-text-semibold" href="engineering-project-planning.html">Engineering & Project Planning</a>
+									<a class="dropdown-item font-text-semibold" href="material-supply-procurement.html">Material Supply & Procurement</a>
+									<a class="dropdown-item font-text-semibold" href="installation-execution.html">Installation & Execution</a>
+									<a class="dropdown-item font-text-semibold" href="maintenance-support.html">Maintenance & Support</a>
 								</div>
-							</li>
-							<li>
-								<a href="client.html" class="font-text-semibold">
-									<span>Clients</span>
-								</a>
 							</li>
 						</ul>
 					</div>
@@ -97,6 +101,11 @@
 					</div>
 					<div class="header-right">
 						<ul class="nav-menu flat" data-aos="fade-left">
+							<li class="hide-tablet">
+								<a href="client.html" class="font-text-semibold">
+									<span>Clients</span>
+								</a>
+							</li>
 							<li class="hide-tablet">
 								<a href="portfolio.html" class="font-text-semibold">
 									<span>Portfolio</span>
@@ -168,71 +177,98 @@
 				<button class="close-toggle">
 					<span class="fa fa-times"></span>
 				</button>
-				<ul id="customDropdownMobile">
-					<li>
-						<div class="search-field">
-							<form id="search-form">
-								<div class="search-wrapper">
-									<input type="text" class="search-text" name="" placeholder="Search here....">
-									<input type="hidden" name="">
-									<button type="submit" class="button button-search">
-										<span class="fa fa-search"></span>
-									</button>
-								</div>
-							</form>
-						</div>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="index.html">
-							<span>Home</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="about.html">
-							<span>About</span>
-						</a>
-					</li>
-					<li>
-						<a href="listing.html" class="font-text-semibold" type="button" data-toggle="collapse" data-target="#subCatOne" aria-expanded="false" aria-controls="subCatOne">
-							<span>Services</span>
-							<span class="icon fa fa-angle-down"></span>
-						</a>
-						<div class="collapse" id="subCatOne" data-parent="#customDropdownMobile">
-							<ul>
-								<li>
-									<a href="service.html">
-										<span>Agriculture</span>
-									</a>
-								</li>
-								<li>
-									<a href="construction.html">
-										<span>Construction</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="client.html">
-							<span>Clients</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="portfolio.html">
-							<span>Portfolio</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="blog.html">
-							<span>Blog</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="contact.html">
-							<span>Contact</span>
-						</a>
-					</li>
-				</ul>
+				<div class="menu-wrapper">
+					<ul id="customDropdownMobile" class="customDropdownMobile">
+						<li>
+							<div class="search-field">
+								<form id="search-form">
+									<div class="search-wrapper">
+										<input type="text" class="search-text" name="" placeholder="Search here....">
+										<input type="hidden" name="">
+										<button type="submit" class="button button-search">
+											<span class="fa fa-search"></span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="index.html">
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="about.html">
+								<span>About</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="agriculture.html">
+								<span>Agriculture</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="construction.html" type="button" data-toggle="collapse" data-target="#subCatOne" aria-expanded="false" aria-controls="subCatOne">
+								<span>Construction</span>
+								<span class="icon fa fa-angle-down"></span>
+							</a>
+							<div class="collapse" id="subCatOne" data-parent="#customDropdownMobile">
+								<ul>
+									<li>
+										<a href="building-construction.html">
+											<span>Building Construction</span>
+										</a>
+									</li>
+									<li>
+										<a href="infrastructure-development.html">
+											<span>Infrastructure Development</span>
+										</a>
+									</li>
+									<li>
+										<a href="engineering-project-planning.html">
+											<span>Engineering & Project Planning</span>
+										</a>
+									</li>
+									<li>
+										<a href="material-supply-procurement.html">
+											<span>Material Supply & Procurement</span>
+										</a>
+									</li>
+									<li>
+										<a href="installation-execution.html">
+											<span>Installation & Execution</span>
+										</a>
+									</li>
+									<li>
+										<a href="maintenance-support.html">
+											<span>Maintenance & Support</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="client.html">
+								<span>Clients</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="portfolio.html">
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="blog.html">
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="contact.html">
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="backdrop-global"></div>
@@ -280,7 +316,15 @@
 															<h6 class="font-text-semibold">Bekasi</h6>
 														</div>
 														<div class="branch-address">
-															<p>Jl. Kali Baru Barat No.8, RT.011/RW.010, Kota Baru, Kec. Bekasi Barat, Kota Bks, Jawa Barat 17133.</p>
+															<p class="font-text-semibold">Jl. Kali Baru Barat No.8, RT.011/RW.010, Kota Baru, Kec. Bekasi Barat, Kota Bks, Jawa Barat 17133.</p>
+														</div>
+														<div class="direction-address">
+															<h6>
+																<a href="#" target="_blank">
+																	<span class="text font-text-semibold">Get Direction</span>
+																	<span class="icon fa fa-arrow-right"></span>
+																</a>
+															</h6>
 														</div>
 													</div>
 												</div>
@@ -294,7 +338,15 @@
 															<h6 class="font-text-semibold">Ciputat</h6>
 														</div>
 														<div class="branch-address">
-															<p>Jl. Maruga Raya No.1, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten.</p>
+															<p class="font-text-semibold">Jl. Maruga Raya No.1, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten.</p>
+														</div>
+														<div class="direction-address">
+															<h6>
+																<a href="#" target="_blank">
+																	<span class="text font-text-semibold">Get Direction</span>
+																	<span class="icon fa fa-arrow-right"></span>
+																</a>
+															</h6>
 														</div>
 													</div>
 												</div>
@@ -308,7 +360,15 @@
 															<h6 class="font-text-semibold">Tanggerang</h6>
 														</div>
 														<div class="branch-address">
-															<p>Jl. Ki Hajar Dewantara, Ruko Golden 8, Blok G, No. 46, Kabupaten Tangerang, Banten.</p>
+															<p class="font-text-semibold">Jl. Ki Hajar Dewantara, Ruko Golden 8, Blok G, No. 46, Kabupaten Tangerang, Banten.</p>
+														</div>
+														<div class="direction-address">
+															<h6>
+																<a href="#" target="_blank">
+																	<span class="text font-text-semibold">Get Direction</span>
+																	<span class="icon fa fa-arrow-right"></span>
+																</a>
+															</h6>
 														</div>
 													</div>
 												</div>
@@ -322,7 +382,15 @@
 															<h6 class="font-text-semibold">Klaten</h6>
 														</div>
 														<div class="branch-address">
-															<p>Jl. Kop. Batur Jaya, Tegalrejo, Kec. Ceper, Kabupaten Klaten, Jawa Tengah 57465.</p>
+															<p class="font-text-semibold">Jl. Kop. Batur Jaya, Tegalrejo, Kec. Ceper, Kabupaten Klaten, Jawa Tengah 57465.</p>
+														</div>
+														<div class="direction-address">
+															<h6>
+																<a href="#" target="_blank">
+																	<span class="text font-text-semibold">Get Direction</span>
+																	<span class="icon fa fa-arrow-right"></span>
+																</a>
+															</h6>
 														</div>
 													</div>
 												</div>
@@ -344,11 +412,11 @@
 													<div class="phone-mail-area">
 														<div class="phone-area">
 															<h4 class="font-text-semibold">Phone</h4>
-															<a href="#">0812-61-805-000</a>
+															<a href="#" target="_blank" class="font-text-semibold">0812-61-805-000</a>
 														</div>
 														<div class="mail-area">
 															<h4 class="font-text-semibold">Mail</h4>
-															<a href="#">wulanciptasejatipt@gmail.com</a>
+															<a href="#" target="_blank" class="font-text-semibold">wulanciptasejatipt@gmail.com</a>
 														</div>
 													</div>
 													<div class="address-area">
@@ -357,7 +425,15 @@
 															<h6 class="font-text-semibold">Tanggerang</h6>
 														</div>
 														<div class="branch-address">
-															<p>Jl. Ki Hajar Dewantara, Ruko Golden 8, Blok G, No. 46, Kabupaten Tangerang, Banten.</p>
+															<p class="font-text-semibold">Jl. Ki Hajar Dewantara, Ruko Golden 8, Blok G, No. 46, Kabupaten Tangerang, Banten.</p>
+														</div>
+														<div class="direction-address">
+															<h6>
+																<a href="#" target="_blank">
+																	<span class="text font-text-semibold">Get Direction</span>
+																	<span class="icon fa fa-arrow-right"></span>
+																</a>
+															</h6>
 														</div>
 													</div>
 												</div>
@@ -370,7 +446,15 @@
 													<h6 class="font-text-semibold">Bekasi</h6>
 												</div>
 												<div class="branch-address">
-													<p>Jl. Kali Baru Barat No.8, RT.011/RW.010, Kota Baru, Kec. Bekasi Barat, Kota Bks, Jawa Barat 17133.</p>
+													<p class="font-text-semibold">Jl. Kali Baru Barat No.8, RT.011/RW.010, Kota Baru, Kec. Bekasi Barat, Kota Bks, Jawa Barat 17133.</p>
+												</div>
+												<div class="direction-address">
+													<h6>
+														<a href="#" target="_blank">
+															<span class="text font-text-semibold">Get Direction</span>
+															<span class="icon fa fa-arrow-right"></span>
+														</a>
+													</h6>
 												</div>
 											</div>
 										</div>
@@ -381,7 +465,15 @@
 													<h6 class="font-text-semibold">Ciputat</h6>
 												</div>
 												<div class="branch-address">
-													<p>Jl. Maruga Raya No.1, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten.</p>
+													<p class="font-text-semibold">Jl. Maruga Raya No.1, Serua, Kec. Ciputat, Kota Tangerang Selatan, Banten.</p>
+												</div>
+												<div class="direction-address">
+													<h6>
+														<a href="#" target="_blank">
+															<span class="text font-text-semibold">Get Direction</span>
+															<span class="icon fa fa-arrow-right"></span>
+														</a>
+													</h6>
 												</div>
 											</div>
 										</div>
@@ -392,7 +484,15 @@
 													<h6 class="font-text-semibold">Klaten</h6>
 												</div>
 												<div class="branch-address">
-													<p>Jl. Kop. Batur Jaya, Tegalrejo, Kec. Ceper, Kabupaten Klaten, Jawa Tengah 57465.</p>
+													<p class="font-text-semibold">Jl. Kop. Batur Jaya, Tegalrejo, Kec. Ceper, Kabupaten Klaten, Jawa Tengah 57465.</p>
+												</div>
+												<div class="direction-address">
+													<h6>
+														<a href="#" target="_blank">
+															<span class="text font-text-semibold">Get Direction</span>
+															<span class="icon fa fa-arrow-right"></span>
+														</a>
+													</h6>
 												</div>
 											</div>
 										</div>
@@ -534,7 +634,10 @@
 												<a href="#" class="font-text-semibold">About Us</a>
 											</div>
 											<div class="col-6">
-												<a href="#" class="font-text-semibold">Services</a>
+												<a href="#" class="font-text-semibold">Agriculture</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Construction</a>
 											</div>
 											<div class="col-6">
 												<a href="#" class="font-text-semibold">Client</a>

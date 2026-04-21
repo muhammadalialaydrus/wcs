@@ -1,18 +1,18 @@
 .form {
 	.jcf-select {
-		border-radius: 10px;
+		border-radius: 20px;
 	}
 	
 	.form-control {
-		color: $body-color;
+		color: $title-color;
 		font-size: 12px;
 		line-height: 150%;
 		padding: 11px 12px;
 		height: auto;
 		border: 0;
-		background-color: $light-blue;
+		background-color: $light-pink;
 		outline: 0;
-		border-radius: 8px;
+		border-radius: 20px;
 
 		@include breakpoint(tablet) {
 			font-size: 14px;
@@ -24,23 +24,21 @@
 			text-align: left!important;
 
 			&::placeholder {
-				color: $text-semi-blue;
+				color: $body-color;
 			}
 		}
 
 		&:disabled {
-			font-style: italic;
-			color: $text-semi-blue;
+			color: $body-color;
 			background-color: #dee6ef;
 		}
 
-		// &:focus {
-		// 	box-shadow: none;	
-		// }
+		&:focus {
+			box-shadow: 0 0 0 .2rem rgba($pink, 0.25);
+		}
 
 		&::placeholder {
-			font-style: italic;
-			color: $text-semi-blue;
+			color: $body-color;
 		}
 	}
 
@@ -50,16 +48,16 @@
 
 	.jcf-select,
 	.form-control {
-		background-color: $light-blue;
+		background-color: $light-pink;
 	}
 
 	.jcf-radio,
 	.jcf-checkbox {
 		border: 0;
-		background-color: $light-blue;
+		background-color: $light-pink;
 
 		&.jcf-checked {
-			background-color: $blue;
+			background-color: $link-color;
 		}
 	}
 
@@ -93,7 +91,6 @@
 		p {
 			font-size: 0.8em;
 			text-align: right;
-			font-style: italic;
 			color: #7ca1d2;
 		}
 	}
@@ -133,24 +130,24 @@
 		&.form-control {
 			height: 160px;
 			resize: none;
-			border-radius: 8px;
+			border-radius: 20px;
 		}
 	}
 
 	::-webkit-input-placeholder {
-		color: $text-semi-blue;
+		color: $body-color;
 	}
 
 	:-moz-placeholder {
-		color: $text-semi-blue;
+		color: $body-color;
 	}
 
 	::-moz-placeholder {
-		color: $text-semi-blue;
+		color: $body-color;
 	}
 
 	:-ms-input-placeholder {  
-		color: $text-semi-blue;
+		color: $body-color;
 	}
 
 	.form-group {
@@ -168,7 +165,7 @@
 
 			&.label-form {
 				text-transform: uppercase;
-				color: $dark;
+				color: $body-color;
 			}
 		}
 
@@ -244,7 +241,7 @@
 			}
 
 			&:hover {
-				color: $blue;
+				color: $link-color;
 			}
 		}
 	}

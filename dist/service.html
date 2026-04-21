@@ -71,19 +71,23 @@
 								</a>
 							</li>
 							<li>
-								<a href="service.html" class="font-text-semibold" data-toggle="dropdown" aria-expanded="false">
-									<span>Services</span>
+								<a href="agriculture.html" class="font-text-semibold">
+									<span>Agriculture</span>
+								</a>
+							</li>
+							<li>
+								<a href="construction.html" class="font-text-semibold" data-toggle="dropdown" aria-expanded="false">
+									<span>Construction</span>
 									<span class="icon fa fa-angle-down"></span>
 								</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item font-text-semibold" href="service.html">Agriculture</a>
-									<a class="dropdown-item font-text-semibold" href="construction.html">Construction</a>
+									<a class="dropdown-item font-text-semibold" href="building-construction.html">Building Construction</a>
+									<a class="dropdown-item font-text-semibold" href="infrastructure-development.html">Infrastructure Development</a>
+									<a class="dropdown-item font-text-semibold" href="engineering-project-planning.html">Engineering & Project Planning</a>
+									<a class="dropdown-item font-text-semibold" href="material-supply-procurement.html">Material Supply & Procurement</a>
+									<a class="dropdown-item font-text-semibold" href="installation-execution.html">Installation & Execution</a>
+									<a class="dropdown-item font-text-semibold" href="maintenance-support.html">Maintenance & Support</a>
 								</div>
-							</li>
-							<li>
-								<a href="client.html" class="font-text-semibold">
-									<span>Clients</span>
-								</a>
 							</li>
 						</ul>
 					</div>
@@ -97,6 +101,11 @@
 					</div>
 					<div class="header-right">
 						<ul class="nav-menu flat" data-aos="fade-left">
+							<li class="hide-tablet">
+								<a href="client.html" class="font-text-semibold">
+									<span>Clients</span>
+								</a>
+							</li>
 							<li class="hide-tablet">
 								<a href="portfolio.html" class="font-text-semibold">
 									<span>Portfolio</span>
@@ -168,71 +177,98 @@
 				<button class="close-toggle">
 					<span class="fa fa-times"></span>
 				</button>
-				<ul id="customDropdownMobile">
-					<li>
-						<div class="search-field">
-							<form id="search-form">
-								<div class="search-wrapper">
-									<input type="text" class="search-text" name="" placeholder="Search here....">
-									<input type="hidden" name="">
-									<button type="submit" class="button button-search">
-										<span class="fa fa-search"></span>
-									</button>
-								</div>
-							</form>
-						</div>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="index.html">
-							<span>Home</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="about.html">
-							<span>About</span>
-						</a>
-					</li>
-					<li>
-						<a href="listing.html" class="font-text-semibold" type="button" data-toggle="collapse" data-target="#subCatOne" aria-expanded="false" aria-controls="subCatOne">
-							<span>Services</span>
-							<span class="icon fa fa-angle-down"></span>
-						</a>
-						<div class="collapse" id="subCatOne" data-parent="#customDropdownMobile">
-							<ul>
-								<li>
-									<a href="service.html">
-										<span>Agriculture</span>
-									</a>
-								</li>
-								<li>
-									<a href="construction.html">
-										<span>Construction</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="client.html">
-							<span>Clients</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="portfolio.html">
-							<span>Portfolio</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="blog.html">
-							<span>Blog</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="contact.html">
-							<span>Contact</span>
-						</a>
-					</li>
-				</ul>
+				<div class="menu-wrapper">
+					<ul id="customDropdownMobile" class="customDropdownMobile">
+						<li>
+							<div class="search-field">
+								<form id="search-form">
+									<div class="search-wrapper">
+										<input type="text" class="search-text" name="" placeholder="Search here....">
+										<input type="hidden" name="">
+										<button type="submit" class="button button-search">
+											<span class="fa fa-search"></span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="index.html">
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="about.html">
+								<span>About</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="agriculture.html">
+								<span>Agriculture</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="construction.html" type="button" data-toggle="collapse" data-target="#subCatOne" aria-expanded="false" aria-controls="subCatOne">
+								<span>Construction</span>
+								<span class="icon fa fa-angle-down"></span>
+							</a>
+							<div class="collapse" id="subCatOne" data-parent="#customDropdownMobile">
+								<ul>
+									<li>
+										<a href="building-construction.html">
+											<span>Building Construction</span>
+										</a>
+									</li>
+									<li>
+										<a href="infrastructure-development.html">
+											<span>Infrastructure Development</span>
+										</a>
+									</li>
+									<li>
+										<a href="engineering-project-planning.html">
+											<span>Engineering & Project Planning</span>
+										</a>
+									</li>
+									<li>
+										<a href="material-supply-procurement.html">
+											<span>Material Supply & Procurement</span>
+										</a>
+									</li>
+									<li>
+										<a href="installation-execution.html">
+											<span>Installation & Execution</span>
+										</a>
+									</li>
+									<li>
+										<a href="maintenance-support.html">
+											<span>Maintenance & Support</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="client.html">
+								<span>Clients</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="portfolio.html">
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="blog.html">
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="contact.html">
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="backdrop-global"></div>
@@ -250,687 +286,49 @@
 												<span class="fa fa-home"></span>
 											</a>
 										</li>
-										<li class="breadcrumb-item" data-aos="fade-in">Service</li>
-										<li class="breadcrumb-item active" data-aos="fade-in" aria-current="page">Agriculture</li>
+										<li class="breadcrumb-item active" data-aos="fade-in" aria-current="page">Service</li>
 									</ol>
 								</nav>
 								<div class="title-page">
-									<h2 class="font-text-bold" data-aos="fade-in">Agriculture</h2>
-									<h6 data-aos="fade-in">See our latest Product</h6>
+									<h2 class="font-text-bold" data-aos="fade-in">Service</h2>
+									<h6 data-aos="fade-in">Description Here</h6>
 								</div>
 							</div>
 						</div>
 					</section>
 					<section class="content-page">
 						<div class="container">
-							<div class="service-content">
-								<div class="content-list-group">
-									<div class="subtitle-section" data-aos="fade-in">
-										<h4 class="font-text-semibold">Drone</h4>
-										<span class="divider"></span>
-										<div class="viewmore">
-											<a href="subservice.html">
-												<span class="text font-text-semibold">View All</span>
-												<span class="icon fa fa-arrow-right"></span>
-											</a>
-										</div>
-									</div>
-									<div class="thumbnails">
-										<div class="thumbnail-wrapper margin-min">
-											<div class="content-list-row row">
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="detail.html">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Hotel</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="detail.html">Extensions Clariont Hotel Makassar</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="detail.html">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Stadium</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="detail.html">Indomilk Arena PERSITA Stadium</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="detail.html">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Park</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="detail.html">Martha Christina Tiahahu Literacy Park</a>
-															</h3>
-														</div>
-													</div>
-												</div>
+							<div class="service-inside row no-gutters justify-content-center">
+								<div class="col-md-6 col-xl-4">
+									<div class="box" data-aos="zoom-in">
+										<div class="wrapper">
+											<div class="icon-area">
+												<span class="icon icon-agriculture"></span>
+											</div>
+											<div class="name-area">
+												<h5 class="font-text-semibold">Agriculture</h5>
+											</div>
+											<div class="desc-area">
+												<p>Upholding honesty, ethics, and responsibility in every action.</p>
 											</div>
 										</div>
+										<a href="agriculture.html" class="click-area"></a>
 									</div>
 								</div>
-								<div class="content-list-group">
-									<div class="subtitle-section" data-aos="fade-in">
-										<h4 class="font-text-semibold">Genset</h4>
-										<span class="divider"></span>
-										<div class="viewmore">
-											<a href="subservice.html">
-												<span class="text font-text-semibold">View All</span>
-												<span class="icon fa fa-arrow-right"></span>
-											</a>
-										</div>
-									</div>
-									<div class="thumbnails">
-										<div class="thumbnail-wrapper margin-min">
-											<div class="content-list-row row">
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Hotel</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Extensions Clariont Hotel Makassar</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Stadium</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Indomilk Arena PERSITA Stadium</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Park</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Martha Christina Tiahahu Literacy Park</a>
-															</h3>
-														</div>
-													</div>
-												</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="box" data-aos="zoom-in">
+										<div class="wrapper">
+											<div class="icon-area">
+												<span class="icon icon-construction"></span>
+											</div>
+											<div class="name-area">
+												<h5 class="font-text-semibold">Construction</h5>
+											</div>
+											<div class="desc-area">
+												<p>Upholding honesty, ethics, and responsibility in every action.</p>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="content-list-group">
-									<div class="subtitle-section" data-aos="fade-in">
-										<h4 class="font-text-semibold">Tractor</h4>
-										<span class="divider"></span>
-										<div class="viewmore">
-											<a href="subservice.html">
-												<span class="text font-text-semibold">View All</span>
-												<span class="icon fa fa-arrow-right"></span>
-											</a>
-										</div>
-									</div>
-									<div class="thumbnails">
-										<div class="thumbnail-wrapper margin-min">
-											<div class="content-list-row row">
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Hotel</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Extensions Clariont Hotel Makassar</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Stadium</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Indomilk Arena PERSITA Stadium</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Park</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Martha Christina Tiahahu Literacy Park</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="content-list-group">
-									<div class="subtitle-section" data-aos="fade-in">
-										<h4 class="font-text-semibold">Water Pump</h4>
-										<span class="divider"></span>
-										<div class="viewmore">
-											<a href="subservice.html">
-												<span class="text font-text-semibold">View All</span>
-												<span class="icon fa fa-arrow-right"></span>
-											</a>
-										</div>
-									</div>
-									<div class="thumbnails">
-										<div class="thumbnail-wrapper margin-min">
-											<div class="content-list-row row">
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/grand-clarion-hotel-makassar1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Hotel</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Extensions Clariont Hotel Makassar</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/indomilk_arena_stadium1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Stadium</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Indomilk Arena PERSITA Stadium</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-6 col-lg-4">
-													<div class="thumbnail-default" data-aos="zoom-in">
-														<div class="image-area">
-															<a href="#">
-																<figure>
-																	<div class="images br-40">
-																		<img class="transform-scale" src="assets/img/photos/martha_christina_tiahahu_literacy_park1.jpg" alt="">
-																	</div>
-																</figure>
-															</a>
-														</div>
-														<div class="info-area">
-															<ul class="tags">
-																<li>
-																	<h6>
-																		<a href="#">Construction</a>
-																	</h6>
-																</li>
-																<li>
-																	<h6>
-																		<a href="#">Park</a>
-																	</h6>
-																</li>
-															</ul>
-															<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																<a href="#">Martha Christina Tiahahu Literacy Park</a>
-															</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="other-thumbnails">
-						<div class="container">
-							<div class="title-section">
-								<h4 class="font-text-semibold" data-aos="zoom-in">Other</h4>
-								<h2 class="font-text-bold" data-aos="zoom-in">Services</h2>
-							</div>
-							<div class="other-slider">
-								<div class="sliders thumb-3">
-									<div class="subtitle-section" data-aos="fade-in">
-										<h4 class="font-text-semibold">Construction</h4>
-										<span class="divider"></span>
-										<div class="viewmore">
-											<a href="subservice.html">
-												<span class="text font-text-semibold">View All</span>
-												<span class="icon fa fa-arrow-right"></span>
-											</a>
-										</div>
-									</div>
-									<div class="slider-area" data-aos="zoom-in">
-										<div class="swiper-container overflow-init">
-											<div class="swiper-wrapper">
-												<div class="swiper-slide">
-													<div class="thumbnails">
-														<div class="thumbnail-wrapper">
-															<div class="thumbnail-default">
-																<div class="image-area">
-																	<a href="#">
-																		<figure>
-																			<div class="images br-40">
-																				<img class="transform-scale" src="assets/img/photos/thumb4.png" alt="">
-																			</div>
-																		</figure>
-																	</a>
-																</div>
-																<div class="info-area">
-																	<ul class="tags">
-																		<li>
-																			<h6>
-																				<a href="#">Construction</a>
-																			</h6>
-																		</li>
-																		<li>
-																			<h6>
-																				<a href="#">Electronics</a>
-																			</h6>
-																		</li>
-																	</ul>
-																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																		<a href="#">Aerotron Videotron</a>
-																	</h3>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="thumbnails">
-														<div class="thumbnail-wrapper">
-															<div class="thumbnail-default">
-																<div class="image-area">
-																	<a href="#">
-																		<figure>
-																			<div class="images br-40">
-																				<img class="transform-scale" src="assets/img/photos/thumb5.png" alt="">
-																			</div>
-																		</figure>
-																	</a>
-																</div>
-																<div class="info-area">
-																	<ul class="tags">
-																		<li>
-																			<h6>
-																				<a href="#">Construction</a>
-																			</h6>
-																		</li>
-																		<li>
-																			<h6>
-																				<a href="#">Electronics</a>
-																			</h6>
-																		</li>
-																	</ul>
-																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																		<a href="#">Videotron</a>
-																	</h3>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="thumbnails">
-														<div class="thumbnail-wrapper">
-															<div class="thumbnail-default">
-																<div class="image-area">
-																	<a href="#">
-																		<figure>
-																			<div class="images br-40">
-																				<img class="transform-scale" src="assets/img/photos/thumb6.png" alt="">
-																			</div>
-																		</figure>
-																	</a>
-																</div>
-																<div class="info-area">
-																	<ul class="tags">
-																		<li>
-																			<h6>
-																				<a href="#">Construction</a>
-																			</h6>
-																		</li>
-																		<li>
-																			<h6>
-																				<a href="#">Electronics</a>
-																			</h6>
-																		</li>
-																	</ul>
-																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																		<a href="#">Videotron</a>
-																	</h3>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="thumbnails">
-														<div class="thumbnail-wrapper">
-															<div class="thumbnail-default">
-																<div class="image-area">
-																	<a href="#">
-																		<figure>
-																			<div class="images br-40">
-																				<img class="transform-scale" src="assets/img/photos/thumb2.png" alt="">
-																			</div>
-																		</figure>
-																	</a>
-																</div>
-																<div class="info-area">
-																	<ul class="tags">
-																		<li>
-																			<h6>
-																				<a href="#">Agriculture</a>
-																			</h6>
-																		</li>
-																		<li>
-																			<h6>
-																				<a href="#">Genset</a>
-																			</h6>
-																		</li>
-																	</ul>
-																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																		<a href="#">Aerotron Powersolver</a>
-																	</h3>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="thumbnails">
-														<div class="thumbnail-wrapper">
-															<div class="thumbnail-default">
-																<div class="image-area">
-																	<a href="#">
-																		<figure>
-																			<div class="images br-40">
-																				<img class="transform-scale" src="assets/img/photos/thumb1.png" alt="">
-																			</div>
-																		</figure>
-																	</a>
-																</div>
-																<div class="info-area">
-																	<ul class="tags">
-																		<li>
-																			<h6>
-																				<a href="#">Agriculture</a>
-																			</h6>
-																		</li>
-																		<li>
-																			<h6>
-																				<a href="#">Drone</a>
-																			</h6>
-																		</li>
-																	</ul>
-																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																		<a href="#">Aerotron AGRA-30</a>
-																	</h3>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide">
-													<div class="thumbnails">
-														<div class="thumbnail-wrapper">
-															<div class="thumbnail-default">
-																<div class="image-area">
-																	<a href="#">
-																		<figure>
-																			<div class="images br-40">
-																				<img class="transform-scale" src="assets/img/photos/thumb4.png" alt="">
-																			</div>
-																		</figure>
-																	</a>
-																</div>
-																<div class="info-area">
-																	<ul class="tags">
-																		<li>
-																			<h6>
-																				<a href="#">Construction</a>
-																			</h6>
-																		</li>
-																		<li>
-																			<h6>
-																				<a href="#">Electronics</a>
-																			</h6>
-																		</li>
-																	</ul>
-																	<h3 class="title-thumbs text-ellipsis overflow-hidden line-clamp-2 font-text-semibold">
-																		<a href="#">Aerotron Videotron</a>
-																	</h3>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="navigation-wrapper" data-aos="fade-in">
-												<div class="swiper-scrollbar"></div>
-												<div class="swiper-custom-arrow swiper-button-prev"></div>
-												<div class="swiper-custom-arrow swiper-button-next"></div>
-											</div>
-										</div>
+										<a href="construction.html" class="click-area"></a>
 									</div>
 								</div>
 							</div>
@@ -1069,7 +467,10 @@
 												<a href="#" class="font-text-semibold">About Us</a>
 											</div>
 											<div class="col-6">
-												<a href="#" class="font-text-semibold">Services</a>
+												<a href="#" class="font-text-semibold">Agriculture</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Construction</a>
 											</div>
 											<div class="col-6">
 												<a href="#" class="font-text-semibold">Client</a>

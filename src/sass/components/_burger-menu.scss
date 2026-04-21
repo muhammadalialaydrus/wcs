@@ -77,23 +77,34 @@ body {
 .burger-menu {
 	position: fixed;
 	z-index: 5;
-	// top: 0;
-	// bottom: 0;
-	// left: 0;
-	// right: 0;
+	top: 0;
+	bottom: 0;
+	left: initial;
+	right: 0;
+	width: 80%;
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
 	transition: $transition-base;
+	transform: translate(100%, 0);
+
+	@include breakpoint(small-mobile) {
+		width: 95%;
+	}
+	
+	@include breakpoint(tablet) {
+		width: 45%;
+	}
+	
+	@include breakpoint(wide) {
+		width: 360px;
+	}
 
 	&.show {
 		opacity: 1;
 		visibility: visible;
 		pointer-events: visible;
-
-		.menu {
-			transform: translate(0, 0);
-		}
+		transform: translate(0, 0);
 	}
 
 	.backdrop {
@@ -117,9 +128,9 @@ body {
 		width: 40px;
 		height: 40px;
 		position: absolute;
-		top: -10px;
+		top: 10px;
 		bottom: initial;
-		right: -10px;
+		right: 10px;
 		left: initial;
 		border-radius: 30px;
 		transition: all 0.3s linear;
@@ -131,26 +142,34 @@ body {
 	}
 
 	.menu {
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		bottom: initial;
-		right: 0;
-		left: initial;
-		padding: 20px 0;
-		margin: 16px;
-		width: 60%;
-		background-color: $white;
-		border-radius: 30px;
-		transition: all 0.3s linear;
-		transform: translate(100%, 0);
-		
-		@include breakpoint(tablet) {
-			width: 40%;
+		position: relative;
+		width: 100%;
+		max-height: 100%;
+		overflow: auto;
+		// position: relative;
+		// z-index: 5;
+		// position: fixed;
+		// z-index: 3;
+		// top: 0;
+		// bottom: initial;
+		// right: 0;
+		// left: initial;
+		// padding: 20px 0;
+		// margin: 16px;
+		// width: 70%;
+		// background-color: $white;
+		// border-radius: 30px;
+		// transition: all 0.3s linear;
+
+		.menu-wrapper {
+			padding: 20px;
+			// overflow: auto;
 		}
-		
-		@include breakpoint(wide) {
-			width: 300px;
+
+		.customDropdownMobile {
+			padding: 20px 0;
+			background-color: $white;
+			border-radius: 30px;
 		}
 
 		ul {
@@ -159,6 +178,8 @@ body {
 		}
 
 		li {
+			display: block;
+
 			+ li {
 				border-top: 1px solid $border-light;
 			}

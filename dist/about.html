@@ -71,19 +71,23 @@
 								</a>
 							</li>
 							<li>
-								<a href="service.html" class="font-text-semibold" data-toggle="dropdown" aria-expanded="false">
-									<span>Services</span>
+								<a href="agriculture.html" class="font-text-semibold">
+									<span>Agriculture</span>
+								</a>
+							</li>
+							<li>
+								<a href="construction.html" class="font-text-semibold" data-toggle="dropdown" aria-expanded="false">
+									<span>Construction</span>
 									<span class="icon fa fa-angle-down"></span>
 								</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item font-text-semibold" href="service.html">Agriculture</a>
-									<a class="dropdown-item font-text-semibold" href="construction.html">Construction</a>
+									<a class="dropdown-item font-text-semibold" href="building-construction.html">Building Construction</a>
+									<a class="dropdown-item font-text-semibold" href="infrastructure-development.html">Infrastructure Development</a>
+									<a class="dropdown-item font-text-semibold" href="engineering-project-planning.html">Engineering & Project Planning</a>
+									<a class="dropdown-item font-text-semibold" href="material-supply-procurement.html">Material Supply & Procurement</a>
+									<a class="dropdown-item font-text-semibold" href="installation-execution.html">Installation & Execution</a>
+									<a class="dropdown-item font-text-semibold" href="maintenance-support.html">Maintenance & Support</a>
 								</div>
-							</li>
-							<li>
-								<a href="client.html" class="font-text-semibold">
-									<span>Clients</span>
-								</a>
 							</li>
 						</ul>
 					</div>
@@ -97,6 +101,11 @@
 					</div>
 					<div class="header-right">
 						<ul class="nav-menu flat" data-aos="fade-left">
+							<li class="hide-tablet">
+								<a href="client.html" class="font-text-semibold">
+									<span>Clients</span>
+								</a>
+							</li>
 							<li class="hide-tablet">
 								<a href="portfolio.html" class="font-text-semibold">
 									<span>Portfolio</span>
@@ -168,71 +177,98 @@
 				<button class="close-toggle">
 					<span class="fa fa-times"></span>
 				</button>
-				<ul id="customDropdownMobile">
-					<li>
-						<div class="search-field">
-							<form id="search-form">
-								<div class="search-wrapper">
-									<input type="text" class="search-text" name="" placeholder="Search here....">
-									<input type="hidden" name="">
-									<button type="submit" class="button button-search">
-										<span class="fa fa-search"></span>
-									</button>
-								</div>
-							</form>
-						</div>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="index.html">
-							<span>Home</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="about.html">
-							<span>About</span>
-						</a>
-					</li>
-					<li>
-						<a href="listing.html" class="font-text-semibold" type="button" data-toggle="collapse" data-target="#subCatOne" aria-expanded="false" aria-controls="subCatOne">
-							<span>Services</span>
-							<span class="icon fa fa-angle-down"></span>
-						</a>
-						<div class="collapse" id="subCatOne" data-parent="#customDropdownMobile">
-							<ul>
-								<li>
-									<a href="service.html">
-										<span>Agriculture</span>
-									</a>
-								</li>
-								<li>
-									<a href="construction.html">
-										<span>Construction</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="client.html">
-							<span>Clients</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="portfolio.html">
-							<span>Portfolio</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="blog.html">
-							<span>Blog</span>
-						</a>
-					</li>
-					<li>
-						<a class="font-text-semibold" href="contact.html">
-							<span>Contact</span>
-						</a>
-					</li>
-				</ul>
+				<div class="menu-wrapper">
+					<ul id="customDropdownMobile" class="customDropdownMobile">
+						<li>
+							<div class="search-field">
+								<form id="search-form">
+									<div class="search-wrapper">
+										<input type="text" class="search-text" name="" placeholder="Search here....">
+										<input type="hidden" name="">
+										<button type="submit" class="button button-search">
+											<span class="fa fa-search"></span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="index.html">
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="about.html">
+								<span>About</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="agriculture.html">
+								<span>Agriculture</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="construction.html" type="button" data-toggle="collapse" data-target="#subCatOne" aria-expanded="false" aria-controls="subCatOne">
+								<span>Construction</span>
+								<span class="icon fa fa-angle-down"></span>
+							</a>
+							<div class="collapse" id="subCatOne" data-parent="#customDropdownMobile">
+								<ul>
+									<li>
+										<a href="building-construction.html">
+											<span>Building Construction</span>
+										</a>
+									</li>
+									<li>
+										<a href="infrastructure-development.html">
+											<span>Infrastructure Development</span>
+										</a>
+									</li>
+									<li>
+										<a href="engineering-project-planning.html">
+											<span>Engineering & Project Planning</span>
+										</a>
+									</li>
+									<li>
+										<a href="material-supply-procurement.html">
+											<span>Material Supply & Procurement</span>
+										</a>
+									</li>
+									<li>
+										<a href="installation-execution.html">
+											<span>Installation & Execution</span>
+										</a>
+									</li>
+									<li>
+										<a href="maintenance-support.html">
+											<span>Maintenance & Support</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="client.html">
+								<span>Clients</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="portfolio.html">
+								<span>Portfolio</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="blog.html">
+								<span>Blog</span>
+							</a>
+						</li>
+						<li>
+							<a class="font-text-semibold" href="contact.html">
+								<span>Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="backdrop-global"></div>
@@ -273,58 +309,73 @@
 										</p>
 									</div>
 									<div class="vision-mission-area">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="vision" data-aos="fade-in">
-													<div class="sublabel">
-														<h5 class="font-text-bold">Vision</h5>
-													</div>
-													<div class="content-inside">
-														<div class="content-list">
-															<h6 class="font-text-semibold">Perusahaan #1 Pilihan Pelanggan</h6>
-															<p>
-																Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum suscipit interdum molestie. Nulla interdum, felis in placerat pellentesque, mauris tellus pharetra justo, a mollis magna metus a lorem. Quisque aliquam, libero a sagittis condimentum, metus lorem finibus diam, at lacinia tellus nunc vitae lacus. Nunc non enim vel eros facilisis euismod tempor id metus.
-															</p>
-															<p>
-																Maecenas id turpis gravida, congue ex id, pellentesque diam. Praesent sollicitudin, velit ut pulvinar sollicitudin, lorem massa fringilla ante, vel congue mi odio eget nisl. Aliquam gravida venenatis tincidunt. Morbi elementum velit neque, id convallis ipsum dapibus ut. Morbi dignissim blandit ex, sit amet faucibus dolor posuere ac.
-															</p>
-														</div>
-														<div class="content-list">
-															<h6 class="font-text-semibold">Perusahaan #1 Pilihan Pelanggan</h6>
-															<p>
-																Ut vel semper massa. Pellentesque et facilisis tortor, finibus aliquet urna. Morbi tincidunt pretium augue et interdum. Nullam sagittis urna a diam dignissim rutrum quis quis velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam aliquam pellentesque rhoncus.
-															</p>
-															<p>
-																Vivamus finibus, libero vel vestibulum tincidunt, dui dui ornare lectus, in sodales dui odio a ipsum. Praesent elementum eros sit amet rutrum gravida. Aliquam sit amet ultrices est, eu laoreet lacus.
-															</p>
-														</div>
-													</div>
+										<div class="vision" data-aos="fade-in">
+											<div class="sublabel">
+												<h5 class="font-text-bold">Vision</h5>
+											</div>
+											<div class="content-inside">
+												<div class="content-list">
+													<h6 class="font-text-semibold">Perusahaan</h6>
+													<p>
+														To become a trusted and leading partner in advancing agriculture and infrastructure development in Indonesia through innovative, high-quality, and reliable solutions.
+													</p>
+													<p>
+														We are committed to delivering excellence through innovation, engineering capability, and compliance-driven solutions-ensuring every project meets industry standards and supports sustainable national development.
+													</p>
 												</div>
 											</div>
-											<div class="col-md-6">
-												<div class="mission" data-aos="fade-in">
-													<div class="sublabel">
-														<h5 class="font-text-bold">Mission</h5>
+										</div>
+										<div class="mission" data-aos="fade-in">
+											<div class="sublabel">
+												<h5 class="font-text-bold">Mission</h5>
+											</div>
+											<div class="content-inside row">
+												<div class="col-md-6">
+													<div class="content-list">
+														<h6 class="font-text-semibold">Deliver Quality & Reliable Solutions</h6>
+														<p>
+															Providing high-quality agricultural machinery. infrastructure support, and construction services that meet industry standards and client expectations.
+														</p>
 													</div>
-													<div class="content-inside">
-														<div class="content-list">
-															<h6 class="font-text-semibold">Perusahaan #1 Pilihan Pelanggan</h6>
-															<p>
-																Mauris sed nulla in neque efficitur blandit nec gravida arcu. Donec eu bibendum tortor, sed vestibulum felis. Quisque convallis, lacus in finibus accumsan, augue diam tempor nisi, non condimentum ex tortor laoreet dui. Vestibulum et tempor quam. Nulla id justo sit amet metus luctus tristique ut nec ipsum.
-															</p>
-															<p>
-																Quisque blandit ante non lorem cursus, id laoreet lorem semper. Maecenas bibendum velit ut tortor fringilla sodales. Aliquam auctor dui mi, vel aliquam lacus luctus id. Maecenas in mi in magna laoreet rutrum. Curabitur ornare ante quis sapien pulvinar pharetra. Sed id gravida ipsum. Sed auctor pretium tortor et sollicitudin.
-															</p>
-														</div>
-														<div class="content-list">
-															<h6 class="font-text-semibold">Perusahaan #1 Pilihan Pelanggan</h6>
-															<p>
-																Ut vel nulla augue. Ut eu congue diam. Cras est elit, gravida ut libero non, pharetra elementum ex. Pellentesque finibus sem non fermentum consectetur. Fusce sit amet commodo dui, non gravida lacus. Donec commodo nibh ac dolor tristique accumsan. Pellentesque et metus nec eros dictum finibus a et est.
-															</p>
-															<p>
-																Praesent mollis in nulla sed dapibus. Sed ut est sed dolor dignissim imperdiet ut vitae nisl.
-															</p>
-														</div>
+												</div>
+												<div class="col-md-6">
+													<div class="content-list">
+														<h6 class="font-text-semibold">Drive Innovation & Continuous Improvement</h6>
+														<p>
+															Continuously developing and improving solutions through innovation, engineering expertise, and practical field experience.
+														</p>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="content-list">
+														<h6 class="font-text-semibold">Support National Development</h6>
+														<p>
+															Actively contributing to the growth of agriculture and infrastructure sectors in Indonesia through scalable and sustainable solutions.
+														</p>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="content-list">
+														<h6 class="font-text-semibold">Build Strong Partnerships</h6>
+														<p>
+															Establishing long-term collaborations with clients, partners, and stakeholders to create mutual value and sustainable growth.
+														</p>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="content-list">
+														<h6 class="font-text-semibold">Uphold Professionalism & Integrity</h6>
+														<p>
+															Maintaining the highest standards of integrity. responsibility, and professionalism in every project and business process.
+														</p>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="content-list">
+														<h6 class="font-text-semibold">Develop Adaptive & Growth-Oriented Team</h6>
+														<p>
+															Fostering an agile, collaborative, and continuously learning team to respond effectively to industry changes and challenges.
+														</p>
 													</div>
 												</div>
 											</div>
@@ -541,7 +592,10 @@
 												<a href="#" class="font-text-semibold">About Us</a>
 											</div>
 											<div class="col-6">
-												<a href="#" class="font-text-semibold">Services</a>
+												<a href="#" class="font-text-semibold">Agriculture</a>
+											</div>
+											<div class="col-6">
+												<a href="#" class="font-text-semibold">Construction</a>
 											</div>
 											<div class="col-6">
 												<a href="#" class="font-text-semibold">Client</a>
