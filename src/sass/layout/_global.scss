@@ -309,7 +309,7 @@ b {
 		letter-spacing: 0.5pt;
 		
 		@include breakpoint(tablet) {
-			font-size: 1.3rem;
+			// font-size: 1.3rem;
 			white-space: nowrap;
 		}
 	}
@@ -889,18 +889,30 @@ b {
 	}
 
 	+ .content-page {
-		margin-top: 50px;
+		margin-top: 60px;
+	
+		@include breakpoint(tablet) {
+			margin-top: 80px;
+		}
 	}
 }
 
 .content-page {
 	.content-list-group {
 		+ .content-list-group {
-			margin-top: 50px;
+			margin-top: 60px;
+			
+			@include breakpoint(tablet) {
+				margin-top: 80px;
+			}
 		}
 
 		+ .paging-area {
-			margin-top: 50px;
+			margin-top: 60px;
+			
+			@include breakpoint(tablet) {
+				margin-top: 80px;
+			}
 		}
 	}
 }
@@ -2186,7 +2198,7 @@ b {
 				color: $title-color;
 				
 				@include breakpoint(tablet) {
-					font-size: 1.3em;
+					font-size: 1.2em;
 				}
 				
 				@include breakpoint(desktop) {
@@ -2194,7 +2206,7 @@ b {
 				}
 
 				@include breakpoint(laptop) {
-					font-size: 1.3em;
+					font-size: 1.2em;
 				}
 
 				a {
@@ -2314,11 +2326,7 @@ b {
 
 				.title-thumbs {
 					@include breakpoint(desktop) {
-						font-size: 1.3em;
-					}
-
-					@include breakpoint(laptop) {
-						font-size: 1.5em;
+						font-size: 1.2em;
 					}
 
 					+ .desc-thumbs {
@@ -2632,7 +2640,7 @@ b {
 				}
 
 				@include breakpoint(tablet) {
-					font-size: 1.25em;
+					font-size: 1.15em;
 				}
 
 				a {
@@ -2861,18 +2869,29 @@ b {
 	}
 
 	.sort-area {
+		width: 100%;
+
+		@include breakpoint(tablet) {
+			width: auto;
+		}
+
 		ul {
 			padding: 0;
 			list-style: none;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: flex-start;
 			align-items: center;
 			gap: 10px;
 
 			li {
 				display: block;
 				margin: 0;
+				width: calc(50% - 5px);
+
+				@include breakpoint(tablet) {
+					width: auto;
+				}
 			}
 		}
 	}
